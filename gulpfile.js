@@ -2,11 +2,10 @@
 var gulp = require('gulp');
 
 // Stylus
-
 var stylus = require('gulp-stylus');
 
 gulp.task('styl', function () {
-  return gulp.src('app/templates/pages/**/*.styl')
+  return gulp.src('app/assets/styles/styles.styl')
   .pipe(stylus())
   .pipe(gulp.dest('dist/assets/'))
 });
@@ -64,12 +63,27 @@ gulp.task('server', function() {
   browserSync.watch('./app/templates/**/*').on('change', browserSync.reload);
 });
 
+// browserSync
+var browserSync = require('browser-sync').create();
+// Static server
+gulp.task('browser-sync', function() {
+    browserSync.init({
+        server: {
+            baseDir: "./dist/static/pages/"
+        }
+    });
+});
+
 // Watch
 var watch = require('gulp-watch');
 
 gulp.task('watch', function() {
   gulp.watch('app/templates/pages/**/*.styl', ['styl']);
   gulp.watch('app/templates/pages/**/*.pug', ['pug']);
+  // обновляем страницу, если обновились assets файлы
+  gulp.watch('app/templates/pages/**/*.styl').on('change', browserSync.reload);
+  // обновляем страницу, если был изменен исходник шаблона
+  gulp.watch('app/templates/pages/**/*.pug').on('change', browserSync.reload);
 });
 
 // gulpCopy
