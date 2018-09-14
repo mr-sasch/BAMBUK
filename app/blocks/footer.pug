@@ -3,26 +3,50 @@ footer
   .footer__ornament
   .container
     .row
-      .col-5
+      .col-12.col-md-6.col-lg-5
         img.footer__logo(src='images/logo__header.png')
         .footer__txt Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык            
-      .col-4
+      .col-12.col-md-6.col-lg-4
         .footer__contacts
           .footer__contacts-ttl Контакты
-          .footer__contacts-phones
-            .footer__contacts-phones-icon
-              img.footer__contacts-phones-icon-img(src='images/footer__telephone.png')
-          .footer__contacts-mail
-            .footer__contacts-phones-icon
-              img.footer__contacts-phones-icon-img(src='images/footer__mail.png')
+          .footer__contacts-row
+            .footer__contacts-row-left
+              img.footer__contacts-row-left-img(src='images/footer__telephone.png')
+            .footer__contacts-row-right
+              .footer__contacts-row-right-row +375 44 265 25 12
+              .footer__contacts-row-right-row +375 44 123 45 78
+          .footer__contacts-row
+            .footer__contacts-row-left
+              img.footer__contacts-row-left-img(src='images/footer__mail.png')
+            .footer__contacts-row-right
+              .footer__contacts-row-right-txt informblog@gmail.com
         .footer__socials
-          .footer__socials-ttl
+          .footer__socials-ttl.footer__contacts-ttl Мы в социальных сетях
           .footer__socials-items
             .footer__socials-items-item
+              img.footer__socials-items-item(src='images/footer__socials-vk.png')
             .footer__socials-items-item
+              img.footer__socials-items-item(src='images/footer__socials-skype.png')
             .footer__socials-items-item
+              img.footer__socials-items-item(src='images/footer__socials-inst.png')
             .footer__socials-items-item
-      .col-3
+              img.footer__socials-items-item(src='images/footer__socials-fb.png')
+      .col-12.col-md-6.col-lg-3
+        .footer__nav-items
+          .footer__nav-item Законы КНР
+          .footer__nav-item Заказать перевод
+          .footer__nav-item Полезные ссылки
+          .footer__nav-item Переводчикам
+          .footer__nav-item Госстандарты КНР
+          .footer__nav-item Праздники и традиции Китая
+          .footer__nav-item Новости и статьи
+          .footer__nav-item О нас
+          .footer__nav-item Доска объявлений
+    // Копирайт
+    .row
+      .footer__separ
+    .row
+      .footer__copyright copyright ©2018 Все права защищены
 // Скрипты 
 // Bootstrap
 script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js")
