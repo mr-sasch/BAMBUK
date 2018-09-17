@@ -1,0 +1,34 @@
+// Заголовок с чертой слева
+mixin ttl-left(txt)
+  .title-left
+    .title-left__text= txt
+    .title-left__line
+// /Заголовок с чертой слева
+
+// Текстовый блок с картинкой сверху
+mixin blockTxtTop(ttl, txt, href)
+  .block-pic-top
+    .block-pic-top__pic(style={'background-image': "url('images/main__articles-1.jpg')"})
+    .block-pic-top__cntnt
+      .block-pic-top__cntnt-ttl= ttl
+      .block-pic-top__cntnt-txt= txt
+      .block-pic-top__cntnt-href
+        a.block-pic-top__cntnt-href-a(href= href) Читать полностью
+// /Текстовый блок с картинкой сверху
+    
+// Текстовый блок с картинкой слева
+mixin blockTxtLeft(ttl, txt, href)
+  .block-pic-left
+    .block-pic-left__pic(style={'background-image': "url('images/main__articles-3.jpg')"})
+    .block-pic-left__cntnt
+      .block-pic-left__cntnt-ttl= ttl
+      .block-pic-left__cntnt-txt= txt
+      .block-pic-left__cntnt-href
+        a.block-pic-left__cntnt-href-a(href= href) Читать полностью
+// /Текстовый блок с картинкой слева
+
+// Рекламный баннер
+mixin advBanner()
+  .adv-banner
+    .adv-banner__txt Какой-то интересный заголовок может быть здесь. Кликабельный
+// /Рекламный баннер

@@ -3,4 +3,58 @@
   height 720px
   width 100%
   background-image url('../images/main__slider.jpg')
+  position relative
+  display -webkit-flex
+  display -ms-flex
+  display flex
+  flex-direction column
+  .navbar
+    flex-grow 0
+
+.main__slider
+  position relative
+  flex-grow 1
+  display -webkit-flex
+  display -ms-flex
+  display flex
+  flex-direction column
+  justify-content center
+
+.main__slider-txt
+  font-size 24px
+
+.main__slider-txt-row-1
+  color textGreen
+  font-size 5em
+  line-height 1em
+  font-family 'Roboto Black', sans-serif
+  shadowMainSlider()
+
+.main__slider-txt-row-2
+  font-size 1em
+  font-weight 400
+  color #fff
+  padding 5px 12px
+  background-color #00000030
+  display inline-block
+  line-height 1em
+  text-transform uppercase
+
+.main__slider-txt-row-3
+  font-size 5em
+  line-height 1em
+  font-family 'Roboto Black', sans-serif
+  color #fff
+  shadowMainSlider()
+  margin-top -20px
+
+.main__slider-txt-row-3-span
+  color textGreen
+  padding-left 25px
+
+/*! адаптация */
+@media screen and (max-width 500px)
+  .main__slider-txt
+    font-size 16px
+/*! /адаптация */
 /*! /Header Главная */

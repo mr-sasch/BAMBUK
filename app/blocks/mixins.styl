@@ -1,0 +1,149 @@
+//! Заголовок с чертой слева
+.title-left
+  display -webkit-flex
+  display -ms-flex
+  display flex
+  flex-direction row
+
+.title-left__text
+  flex-grow 0
+  padding-right 10px
+
+.title-left__line
+  flex-grow 1
+  position relative
+.title-left__line:before
+  content ''
+  position absolute
+  top 60%
+  transform translateY(-50%)
+  border-top 1px solid #959595
+  left 0
+  width 100%
+  height 2px
+//! /Заголовок с чертой слева
+
+//! Текстовый блок с картинкой сверху
+.block-pic-top
+  background-color block-pic-top-bg
+  shadowTxtBlocks()
+
+.block-pic-top__pic
+  height 200px
+  background-repeat no-repeat
+  background-size cover
+
+.block-pic-top__cntnt
+  padding 15px 15px 10px 20px
+
+.block-pic-top__cntnt-ttl
+  font-size 20px
+  line-height 20px
+  color #262626
+  font-weight 600
+
+.block-pic-top__cntnt-txt
+  color #000
+  font-size 18px
+  line-height 22px
+  font-weight 300
+  margin-top 15px
+  margin-bottom 20px
+
+.block-pic-top__cntnt-href
+  text-align right
+
+.block-pic-top__cntnt-href-a
+  font-size 16px
+  font-weight 400
+  color #000
+.block-pic-top__cntnt-href-a:hover
+  color #000
+.block-pic-top__cntnt-href-a:active
+  color #000
+//! /Текстовый блок с картинкой сверху
+
+//! Текстовый блок с картинкой слева
+.block-pic-left
+  min-height 293px
+  display -webkit-flex
+  display -ms-flex
+  display flex
+  flex-direction row
+  background-color block-pic-top-bg
+  shadowTxtBlocks()
+
+.block-pic-left__pic
+  width 100%
+  max-width 370px
+  background-repeat no-repeat
+  background-size cover
+
+.block-pic-left__cntnt
+  padding 20px 20px 35px 30px
+  position relative
+
+.block-pic-left__cntnt-ttl
+  font-size 20px
+  line-height 20px
+  color #262626
+  font-weight 600
+
+.block-pic-left__cntnt-txt
+  color #000
+  font-size 18px
+  line-height 22px
+  font-weight 300
+  margin-top 15px
+  margin-bottom 20px
+
+.block-pic-left__cntnt-href
+  text-align right
+  position absolute
+  bottom 0
+  left 0
+  width 100%
+  padding-right 15px
+  bottom 10px
+
+.block-pic-left__cntnt-href-a
+  font-size 16px
+  font-weight 400
+  color #000
+.block-pic-left__cntnt-href-a:hover
+  color #000
+//! /Текстовый блок с картинкой слева
+
+//! Рекламный баннер
+.adv-banner
+  position relative
+  width 100%
+  height 100%
+  background-image url('../images/main__banner-1.jpg')
+  background-size cover
+  background-repeat no-repeat
+  display -webkit-flex
+  display -ms-flex
+  display flex
+  justify-content center
+  align-items center
+  padding 30px
+
+.adv-banner:before
+  content ''
+  position absolute
+  width 100%
+  height 100%
+  top 0
+  left 0
+  z-index 10
+  opacity .78
+  background-color #082f08
+
+.adv-banner__txt
+  position relative
+  color #fff
+  font-size 24px
+  line-height 24px
+  z-index 20
+//! /Рекламный баннер
