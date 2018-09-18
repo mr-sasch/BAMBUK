@@ -3,10 +3,13 @@ var gulp = require('gulp');
 
 // Stylus
 var stylus = require('gulp-stylus');
+var sourcemaps = require('gulp-sourcemaps');
 gulp.task('styl', function () {
   return gulp.src('app/styles/style.styl')
-  .pipe(stylus())
-  .pipe(gulp.dest('dist/assets/'))
+    .pipe(sourcemaps.init())
+    .pipe(stylus())
+    .pipe(sourcemaps.write('.'))
+    .pipe(gulp.dest('dist/assets/'));
 });
 
 // Pug

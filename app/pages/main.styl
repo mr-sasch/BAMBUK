@@ -1,9 +1,19 @@
 /*! Главная */
+.main__news
+  background-image url(../images/main__bambuk-left.png)
+  background-position left center
+  background-repeat no-repeat
+
 .main__news-ttl
   margin 30px 0
   .title-left
     font-size 30px
     color #494949
+
+.main__bg-bottom
+  background-image url(../images/main__bambuk-left.png)
+  background-position left bottom
+  background-repeat no-repeat
 
 
 
@@ -28,6 +38,42 @@
   font-size 18px
   font-weight 300
   line-height 22px
-
 /*! /Добро пожаловать */
+
+/*! Последние актуальные новости */
+@media screen and (max-width 768px)
+  .block-pic-left
+    flex-direction column
+  .block-pic-left__pic
+    height 220px
+    max-width inherit
+/*! /Последние актуальные новости */
+
+//! Важные статьи
+.main__articles
+  color #494949
+  .title-left
+    margin 30px 0
+    font-size 30px
+//! /Важные статьи
+
+//! СЕО текст
+.seo-center
+  margin-bottom 50px
+
+.seo-center-ttl
+  margin 50px 0
+  .title-center__line-text
+    font-size 30px
+    color #494949
+
+.seo-center-txt
+  font-size 16px
+  font-weight 300
+  color #343434
+  cursor pointer
+
+//! /СЕО текст
+
+
 /*! /Главная */

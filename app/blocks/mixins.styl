@@ -25,16 +25,24 @@
 
 //! Текстовый блок с картинкой сверху
 .block-pic-top
+  height 100%
   background-color block-pic-top-bg
   shadowTxtBlocks()
+  display -webkit-flex
+  display -ms-flex
+  display flex
+  flex-direction column
 
 .block-pic-top__pic
   height 200px
   background-repeat no-repeat
   background-size cover
+  flex-grow 0
 
 .block-pic-top__cntnt
-  padding 15px 15px 10px 20px
+  position relative
+  padding 15px 15px 35px 20px
+  flex-grow 1
 
 .block-pic-top__cntnt-ttl
   font-size 20px
@@ -52,6 +60,11 @@
 
 .block-pic-top__cntnt-href
   text-align right
+  position absolute
+  right 0
+  width 100%
+  padding-right 15px
+  bottom 10px
 
 .block-pic-top__cntnt-href-a
   font-size 16px
@@ -119,6 +132,7 @@
   position relative
   width 100%
   height 100%
+  min-height 250px
   background-image url('../images/main__banner-1.jpg')
   background-size cover
   background-repeat no-repeat
@@ -147,3 +161,134 @@
   line-height 24px
   z-index 20
 //! /Рекламный баннер
+
+//! УТП вер.1
+.utp1
+  background-image url(../images/main__form-1.jpg)
+  background-size cover
+  text-align center
+  padding 70px 10px
+  font-size 24px
+  line-height 28px
+  color #fff
+
+.utp1__ttl
+  font-size 3em
+  line-height 1em
+  color #fff
+  font-weight 600
+  margin auto
+  max-width 950px
+
+.utp1__txt
+  padding 40px 0
+  max-width 900px
+  margin auto
+  font-weight 300
+
+@media screen and (max-width 550px)
+  .utp1__ttl
+    font-size 1.8em
+//! /УТП вер.1
+
+//! Стандартная красная кнопка
+.red-btn
+  color #fff
+  font-size 24px
+  font-weight 300
+  border 2px solid rgba(#ffffff, 0.9)
+  background-color rgba(#830000, 0.62)
+  padding 2px 20px 8px
+  cursor pointer
+  transition .2s ease
+
+.red-btn:focus
+  outline none
+
+.red-btn:hover
+  border 2px solid rgba(#ffffff, 1)
+  background-color rgba(#830000, 1)
+
+//! /Стандартная красная кнопка
+
+//! Баннер на всю ширину
+.adv-full-width
+  height 250px
+  background-color #93cac4
+  display -webkit-flex
+  display -ms-flex
+  display flex
+  justify-content center
+  align-items center
+  font-size 36px
+  font-weight 600
+  color #fff
+//! /Баннер на всю ширину
+
+//! Заголовок с чертами по бокам
+.title-center
+  display -webkit-flex
+  display -ms-flex
+  display flex
+  flex-direction row
+  justify-content space-around
+
+
+.title-center__line-text
+  flex-grow 0
+  padding 0 10px
+
+.title-center__line-left
+  position relative
+  flex-grow 1
+
+.title-center__line-left:before
+  content ''
+  position absolute
+  top 56%
+  transform translateY(-50%)
+  border-top 1px solid #959595
+  left 0
+  width 100%
+  height 2px
+
+.title-center__line-right
+  position relative
+  flex-grow 1
+
+.title-center__line-right:before
+  content ''
+  position absolute
+  top 56%
+  transform translateY(-50%)
+  border-top 1px solid #959595
+  left 0
+  width 100%
+  height 2px
+
+//! /Заголовок с чертами по бокам
+
+//! Смотреть полный текст
+.main__seo-txt-more-btn
+  color #739214
+  font-size 16px
+  cursor pointer
+  font-weight 600
+  display inline-block
+  width 180px
+  height 24px
+  position relative
+
+.main__seo-txt-more-btn-show,
+.main__seo-txt-more-btn-hide
+  position absolute
+  left 0
+  top 50%
+  transform translateY(-50%)
+
+.main__seo-txt-more-btn-show:hover,
+.main__seo-txt-more-btn-hide:hover
+  text-decoration underline
+
+
+//! /Смотреть полный текст
