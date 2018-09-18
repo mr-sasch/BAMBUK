@@ -1,0 +1,69 @@
+extends ../templates/template-simple
+
+block content  
+  // Header 
+  +header__simple('gosstandarts__header-bg', 'Госстандарты КНР')
+  // /Header 
+  .bg__right
+    +breabcrumbs()
+    // Контент
+    // Сео текст
+    .container
+      .row
+        .col-12
+          +seo-center()
+    // /Сео текст
+    // Перечень стандартов
+    .gos-standarts
+      .container
+        .row
+          .col-12
+            .gos-standarts__item
+              mixin itemLeft()
+                .gos-standarts__item-left
+                  .gos-standarts__item-left-row.gos-standarts__item-left-row1 GB 25465 - 2010 Нормы выброса загрязняющих веществ в алюминиевой промышленности
+                  .gos-standarts__item-left-row.gos-standarts__item-left-row2 GB 25465 - 2010 工染物排放准
+              mixin itemBuy()
+                .gos-standarts__item-right-buy
+                  .gos-standarts__item-right-buy-price 300 рублей
+                  .gos-standarts__item-right-buy-btn Купить
+              +itemLeft()
+              .gos-standarts__item-right
+                +itemBuy()
+              .gos-standarts__item
+                +itemLeft()
+                .gos-standarts__item-right
+                  .gos-standarts__item-right-download Скачать
+              .gos-standarts__item
+                +itemLeft()
+                .gos-standarts__item-right
+                  .gos-standarts__item-right-download Скачать
+              .gos-standarts__item
+                +itemLeft()
+                .gos-standarts__item-right
+                  +itemBuy()
+              .gos-standarts__item
+                +itemLeft()
+                .gos-standarts__item-right
+                  +itemBuy()
+              .gos-standarts__item
+                +itemLeft()
+                .gos-standarts__item-right
+                  .gos-standarts__item-right-watch Просмотреть на сайте партнеров
+              .gos-standarts__item
+                +itemLeft()
+                .gos-standarts__item-right
+                  .gos-standarts__item-right-download Скачать
+    // /Перечень стандартов
+  
+  // УТП
+  .main__utp
+  +utp1('Качественные переводы с китайского языка', 'Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке', 'Оформить заявку', 'main-utp-btn')
+  // /УТП
+  .main__bg-bottom
+    .container
+      .row
+        .col-12
+          .gos-standarts__adv-full-width-wrap
+            +advFullWidth()
+  // /Контент

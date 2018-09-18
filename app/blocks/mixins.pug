@@ -79,3 +79,31 @@ mixin seo-center()
       .seo-center-txt-more-btn-wrap
         +moreBtn('Смотреть полный текст', 'main-seo-more-btn')
   //- /Сео текст
+
+mixin header__simple(simpleSliderClass, simpleSliderTtl)
+  header.header__simple
+    include navbar
+    // Слайдер
+    .simple__slider(class= simpleSliderClass)
+      .container
+        .row
+          .col-12
+            .simple__slider-ttl
+              .simple__slider-ttl-left
+              .simple__slider-ttl-txt= simpleSliderTtl
+              .simple__slider-ttl-right
+
+mixin breabcrumbs()
+  .container
+    .row
+      .col-12
+        // Крошки
+        .breabcrumbs
+          a(href='/').breabcrumbs__item Главная
+          .breabcrumbs__separ /
+          a(href='#').breabcrumbs__item Первая страница
+          .breabcrumbs__separ /
+          a(href='#').breabcrumbs__item Вторая страница
+          .breabcrumbs__separ /
+          .breabcrumbs__item.breabcrumbs__item-current Текущая страница
+        // /Крошки
