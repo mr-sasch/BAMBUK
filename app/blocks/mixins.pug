@@ -81,10 +81,10 @@ mixin seo-center()
   //- /Сео текст
 
 mixin header__simple(simpleSliderClass, simpleSliderTtl)
-  header.header__simple
+  header.header__simple(class= simpleSliderClass)
     include navbar
     // Слайдер
-    .simple__slider(class= simpleSliderClass)
+    .simple__slider
       .container
         .row
           .col-12
@@ -107,3 +107,25 @@ mixin breabcrumbs()
           .breabcrumbs__separ /
           .breabcrumbs__item.breabcrumbs__item-current Текущая страница
         // /Крошки
+
+mixin sideMenu()
+  // Боковое меню
+  .side-menu
+    a(href='#').side-menu__item Административно-территориальное деление Китая
+    a(href='#').side-menu__item.active Политический строй. Китая
+    a(href='#').side-menu__item Правительство Китая
+    a(href='#').side-menu__item Состав Правительства Китая
+
+mixin utp2()
+  // УТП вер.2
+  .utp2
+    .container
+      .row
+        .col-12.text-center
+          .utp2__ttl Заказать 
+            span.utp2__ttl-yellow бесплатную 
+            | оценку стоимости перевода
+          .utp2__txt Для точной оценки стоимость заказа, мы просим прислать Ваш текст на оценку или связаться с нами по телефону или электронной почте.
+          .utp2__btn
+            +redBtn('Загрузить текст', 'utp2')
+  // /УТП вер.2

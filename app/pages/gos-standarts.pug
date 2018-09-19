@@ -4,7 +4,7 @@ block content
   // Header 
   +header__simple('gosstandarts__header-bg', 'Госстандарты КНР')
   // /Header 
-  .bg__right
+  .bg__right.bg-grey
     +breabcrumbs()
     // Контент
     // Сео текст
@@ -32,7 +32,7 @@ block content
                 .gos-standarts__item-right-buy-price 300 рублей
                 .gos-standarts__item-right-buy-btn#gos-standarts__item-right-buy-btn Купить
             //- Миксины
-            .gos-standarts__items
+            .gos-standarts__items.mb-5
               .gos-standarts__item
                 +itemLeft()
                 .gos-standarts__item-right
@@ -65,7 +65,7 @@ block content
   
   // УТП
   .main__utp
-  +utp1('Качественные переводы с китайского языка', 'Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке', 'Оформить заявку', 'main-utp-btn')
+    +utp1('Качественные переводы с китайского языка', 'Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке', 'Оформить заявку', 'main-utp-btn')
   // /УТП
   .main__bg-bottom
     .container
