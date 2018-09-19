@@ -523,6 +523,7 @@ footer {
   margin: 20px 0;
   font-size: 12px;
   flex-wrap: wrap;
+  margin-bottom: 50px;
 }
 a.breabcrumbs__item {
   color: #7d7d7d;
@@ -889,6 +890,15 @@ a.breabcrumbs__item:hover {
   cursor: pointer;
 }
 /* /Главная */
+.trans__header-bg {
+  background-image: url("../images/trans__header-bg.jpg");
+}
+.trans-item {
+  margin-bottom: 20px;
+}
+.trans-item .block-pic-left {
+  min-height: 200px;
+}
 /* Общие стили */
 .bg-grey {
   background-color: #f8f8f8;
