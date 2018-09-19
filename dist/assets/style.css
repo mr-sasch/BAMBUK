@@ -621,6 +621,89 @@ a.breabcrumbs__item:hover {
 .gosstandarts__header-bg {
   background-image: url("../images/header__gosst.png");
 }
+.gos-standarts {
+  margin-bottom: 80px;
+}
+.gos-standarts__items {
+  border: 1px solid #c4c4c4;
+  background-color: #fff;
+}
+.gos-standarts__item {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 30px;
+  transition: 0.2s ease;
+}
+.gos-standarts__item:hover {
+  background-color: rgba(196,196,196,0.3);
+}
+.gos-standarts__item-right {
+  text-align: center;
+  flex-basis: 180px;
+}
+.gos-standarts__item-left-row1 {
+  font-size: 18px;
+  line-height: 19px;
+  color: #313334;
+  font-weight: 600;
+}
+.gos-standarts__item-left-row-number {
+  margin-right: 10px;
+}
+.gos-standarts__item-left-row2 {
+  color: #e20000;
+  font-size: 18px;
+}
+.gos-standarts__item-left-row-number {
+  font-weight: 600;
+}
+.gos-standarts__item-right-buy-price {
+  font-size: 18px;
+  line-height: 19px;
+  color: #313334;
+}
+.gos-standarts__item-right-buy-btn {
+  font-size: 18px;
+  cursor: pointer;
+  color: #e20000;
+  font-weight: 600;
+}
+.gos-standarts__item-right-buy-btn:hover {
+  text-decoration: underline;
+}
+.gos-standarts__item-right-download {
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+}
+.gos-standarts__item-right-download:hover {
+  text-decoration: underline;
+}
+.gos-standarts__item-right-watch {
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 18px;
+}
+.gos-standarts__item-right-watch:hover {
+  text-decoration: underline;
+}
+@media screen and (max-width: 425px) {
+  .gos-standarts__item {
+    flex-direction: column;
+    border-bottom: 1px solid #d3d3d3;
+  }
+  .gos-standarts__item:last-child {
+    border-bottom: none;
+  }
+  .gos-standarts__item-right {
+    flex-basis: inherit;
+    margin-top: 10px;
+  }
+}
 /* Главная */
 .main__news {
   background-image: url("../images/main__bambuk-left.png");
