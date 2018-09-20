@@ -913,6 +913,93 @@ a.breabcrumbs__item:hover {
   cursor: pointer;
 }
 /* /Главная */
+.trans-inner__examples .title-left__text {
+  font-size: 24px;
+  font-weight: 600;
+  color: #000;
+}
+.trans-inner__slider-item-wrap {
+  position: relative;
+  height: 350px;
+  width: 300px;
+}
+.trans-inner__slider-item {
+  box-shadow: 4px 4px 3px rgba(128,128,128,0.42);
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  bottom: 10px;
+  right: 10px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #fff;
+}
+.trans-inner__slider-wrap {
+  padding: 0 50px;
+}
+.trans-inner__slider button.slick-next.slick-arrow {
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  transform: translateY(-50%) rotate(-90deg);
+}
+.trans-inner__slider button.slick-prev.slick-arrow {
+  position: absolute;
+  right: 100%;
+  top: 50%;
+  transform: translateY(-50%) rotate(90deg);
+}
+.trans-inner__slider button.slick-arrow {
+  color: transparent;
+  background-color: transparent;
+  border: none;
+  width: 35px;
+  height: 35px;
+  position: relative;
+  cursor: pointer;
+  font-size: 0;
+}
+.trans-inner__slider button.slick-arrow:focus {
+  outline: none;
+}
+.trans-inner__slider button.slick-arrow:before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-image: url("../images/slider-arrow.png");
+  background-size: contain;
+  background-position: center;
+}
+.trans-inner__slider ul.slick-dots {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  font-size: 0;
+  padding: 0;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  bottom: -50px;
+  left: 0;
+}
+.trans-inner__slider .slick-dots button {
+  width: 40px;
+  height: 4px;
+  margin: 0 3px;
+  border: none;
+  background-color: #c4c4c4;
+  cursor: pointer;
+}
+.trans-inner__slider .slick-dots button:focus {
+  outline: none;
+}
+.trans-inner__slider .slick-dots .slick-active button {
+  background-color: #adc85a;
+}
 .trans__header-bg {
   background-image: url("../images/trans__header-bg.jpg");
 }
@@ -977,7 +1064,7 @@ a.breabcrumbs__item:hover {
 .bg__right2 {
   background-image: url("../images/bg__right2.png");
   background-position: right center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 /* /Общие стили */

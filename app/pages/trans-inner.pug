@@ -1,0 +1,82 @@
+extends ../templates/template-simple
+
+block content  
+  // Header 
+  +header__simple('trans__header-bg', 'Для переводчиков')
+  // /Header 
+  .bg__right2
+    +breabcrumbs()
+    // Контент
+    .container.pb-5
+      .row.mb-5
+        .col-12.col-md-4
+          .trans__links.mb-4
+            .trans__links-ttl Ссылки на словари
+            .trans__links-items
+              a(href='#' target='_blank').trans__links-item Ссылка на словарь
+              a(href='#' target='_blank').trans__links-item Ссылка на словарь
+              a(href='#' target='_blank').trans__links-item Еще одна ссылка на словарь
+              a(href='#' target='_blank').trans__links-item Название ссылки 
+              a(href='#' target='_blank').trans__links-item Название словаря
+              a(href='#' target='_blank').trans__links-item Словарь в виде ссылки
+              a(href='#' target='_blank').trans__links-item И тут тоже ссылка
+              a(href='#' target='_blank').trans__links-item Название полезной ссылки
+              a(href='#' target='_blank').trans__links-item Название полезной ссылки
+              a(href='#' target='_blank').trans__links-item Название полезной ссылки
+              a(href='#' target='_blank').trans__links-item Еще одна ссылка на словарь
+              a(href='#' target='_blank').trans__links-item Словарь в виде ссылки
+              a(href='#' target='_blank').trans__links-item Название полезной ссылки            
+          .trans__adv.mb-4.mb-md-0
+            +advBanner()
+        .trans-items.col-12.col-md-8
+          .side-text-right
+            .side-text-right__ttl
+              +ttl-left('СЕО Заголовок')
+            .side-text-right_txt
+              p Вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языкевебмастеру на русском языке вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языкевебмастеру на русском языке вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языкевебмастеру на русском языке вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языкевебмастеру на русском языке
+              p Вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке вебмастеру на русском языке вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языкевебмастеру на русском языке
+              p Вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке вебмастеру
+          .trans-item
+            +blockTxtLeft('Заголовок статьи', 'Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более ', '#')
+          .trans-item
+            +blockTxtLeft('Заголовок статьи', 'Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более ', '#')
+          .trans-item
+            +blockTxtLeft('Заголовок статьи', 'Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более ', '#')
+          .trans-item
+            +blockTxtLeft('Заголовок статьи', 'Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более ', '#')
+          .trans__pagination
+            +pagination()
+      // Образцы перевода
+      .trans-inner__examples
+        .row
+          .col-12
+            +ttl-left('Образцы перевода')
+          .col-12.mb-5
+            .trans-inner__slider-wrap
+              .trans-inner__slider
+                .trans-inner__slider-item-wrap
+                  .trans-inner__slider-item(style='background-image: url(images/trans-inner__examples.jpg)')
+                .trans-inner__slider-item-wrap
+                  .trans-inner__slider-item(style='background-image: url(images/trans-inner__examples.jpg)')
+                .trans-inner__slider-item-wrap
+                  .trans-inner__slider-item(style='background-image: url(images/trans-inner__examples.jpg)')
+                .trans-inner__slider-item-wrap
+                  .trans-inner__slider-item(style='background-image: url(images/trans-inner__examples.jpg)')
+                .trans-inner__slider-item-wrap
+                  .trans-inner__slider-item(style='background-image: url(images/trans-inner__examples.jpg)')
+                .trans-inner__slider-item-wrap
+                  .trans-inner__slider-item(style='background-image: url(images/trans-inner__examples.jpg)')
+      // /Образцы перевода
+  // УТП
+  .main__utp
+    +utp1('Качественные переводы с китайского языка', 'Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке', 'Оформить заявку', 'main-utp-btn')
+  // /УТП
+  .main__bg-bottom
+    .container
+      .row
+        .col-12
+          .gos-standarts__adv-full-width-wrap
+            +advFullWidth()
+  // /Контент
+  block customScripts
+    script(src='assets/trans-inner.js')
