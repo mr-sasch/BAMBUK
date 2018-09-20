@@ -1,0 +1,89 @@
+//! Доска объявлений
+.doska__header-bg
+  background-image url(../images/doska__header-bg.jpg)
+
+.doska__pagination
+  display -webkit-flex
+  display -ms-flex
+  display flex
+  justify-content flex-end
+
+.doska__items
+  background-color #fff
+  padding 30px
+  padding-bottom 20px
+  border 1px solid #c4c4c4
+
+.doska__item
+  display -webkit-flex
+  display -ms-flex
+  display flex
+  justify-content space-between
+  margin-bottom 30px
+  align-items center
+
+.doska__item-cntnt
+  padding 0 20px 0 30px
+  width 100%
+
+.doska__item-cntnt-ttl
+  color #313334
+  font-size 18px
+  font-weight 600
+
+.doska__item-cntnt-cat
+  color #a40000
+  font-size 14px
+
+.doska__item-cntnt-txt
+  color #5a5a5a
+  font-size 14px
+
+.doska__item-cntnt-more-btn
+  color #5a5a5a
+  font-size 18px
+  font-weight 600
+.doska__item-cntnt-more-btn:hover
+  color #5a5a5a
+
+.doska__item-img
+  width 80px
+  height 80px
+  background-position center
+  background-size cover
+  background-repeat no-repeat
+  border-radius 50%
+  box-shadow 1px 0px 7px 2px #808080b8
+  flex-shrink 0
+
+.doska
+  .side-menu__item
+    background-color #fff
+  .side-menu__item:hover
+    background-color #888888
+    color #fff
+
+.doska__search-wrap
+  text-align right
+
+.doska__search
+  border 1px solid #c4c4c4
+  border-bottom none
+  display inline-block
+  width 100%
+  max-width 270px
+  padding-left 20px
+  color #698b00
+  font-size 16px
+.doska__search:focus
+  outline none
+
+
+
+@media screen and (max-width 992px)
+  .doska__item
+    border-bottom 1px solid lightgrey
+    padding-bottom 20px
+  .doska__item-cntnt
+    padding 20px 0
+//! /Доска объявлений

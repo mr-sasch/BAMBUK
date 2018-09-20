@@ -1,0 +1,61 @@
+extends ../templates/template-simple
+
+block content  
+  // Header 
+  +header__simple('doska__header-bg', 'Доска объявлений')
+  // /Header 
+  .doska.bg-grey.pb-5
+    .bg__right
+      +breabcrumbs()
+      // Контент
+      .container
+        .row
+          .col-12
+            .gosustroy__intro В данном разделе  представлены сведения о правовой системе КНР, административно-территориальном делении КНР, структуре государственных органов. Здесь вы найдете такие основополагающие документы, как пятилетние планы экономического и социального развития КНР, а также доклады об их исполнении. Представлена коллекция нормативно-правовых актов КНР касательно обширного круга вопросов.
+        .row.mt-5
+          .col-12.col-md-4.mb-5.mb-md-0
+            +sideMenu()
+            .doska__big-red-button-wrap.mt-4.mb-4
+              +bigRedButton()
+          .col-12.col-md-8
+            // Объявления
+            .doska__block
+              // Поиск
+              .doska__search-wrap
+                input(type='text' placeholder='Поиск по объявлениям...').doska__search
+              // /Поиск
+              // Айтемы
+              .doska__items
+                mixin doska__item()
+                  .doska__item.flex-column.flex-lg-row
+                    .doska__item-img(style='background-image: url(images/doska__item-img.jpg)')
+                    .doska__item-cntnt
+                      .doska__item-cntnt-ttl Предоставляю услуги по переводу с Китайского
+                      .doska__item-cntnt-cat Рубрика 2
+                      .doska__item-cntnt-txt Опыт работы: 8 лет. Знание Китайского: upper intermediate.
+                    a(href='#').doska__item-cntnt-more-btn Подробнее
+                +doska__item()
+                +doska__item()
+                +doska__item()
+                +doska__item()
+                +doska__item()
+                +doska__item()
+                // Пагинация
+                .doska__pagination.mt-5
+                  +pagination()
+                // /Пагинация
+              // /Айтемы
+            // /Объявления
+              
+      // /Контент
+    
+  // УТП
+  +utp1('Качественные переводы с китайского языка', 'Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке', 'Оформить заявку', 'take-order')
+  // /УТП
+  .main__bg-bottom
+    .container
+      .row
+        .col-12
+          .gos-standarts__adv-full-width-wrap
+            +advFullWidth()
+  // /Контент
