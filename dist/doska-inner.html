@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+    <title>Document</title>
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"/>
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"/>
+    <!-- Стили -->
+    <link rel="stylesheet" type="text/css" href="assets/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/style.css"/>
+    <!-- Шрифты-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&amp;amp;subset=cyrillic" rel="stylesheet"/>
+  </head>
+  <body>
+    <!-- Header -->
+        <header class="header__simple doska__header-bg">
+          <!-- Нав меню -->
+          <div class="navbar">
+            <div class="container">
+              <div class="row w-100 m-auto">
+                <div class="col-12 d-flex justify-content-between align-items-center flex-column flex-md-row">
+                  <div class="navbar__logo"><img class="navbar__logo-img" src="images/logo__header.png"/></div>
+                  <div class="navbar__navs flex-column flex-lg-row w-lg-100"><a class="navbar__navs-nav-a" href="#">Законы КНР</a>
+                    <div class="navbar__navs-separ"></div><a class="navbar__navs-nav-a" href="#">Заказать перевод</a>
+                    <div class="navbar__navs-separ"></div><a class="navbar__navs-nav-a" href="#">Полезные ссылки</a>
+                    <div class="navbar__navs-separ"></div><a class="navbar__navs-nav-a" href="#">Китаеведы, НИИ</a>
+                    <div class="navbar__navs-separ"></div>
+                    <div class="navbar__navs-more">Еще</div>
+                  </div>
+                  <div class="navbar__contacts">
+                    <div class="navbar__contacts-item"><img class="navbar__contacts-item-phone-img" src="images/navbar__phone.png"/>
+                      <div class="navbar__contacts-item-txt">+375 44 265 25 12</div>
+                    </div>
+                    <div class="navbar__contacts-item"><img class="navbar__contacts-item-mail-img" src="images/navbar__mail.png"/>
+                      <div class="navbar__contacts-item-txt">infoport@gmail.com</div>
+                    </div>
+                  </div>
+                  <div class="navbar__search mt-3 mt-lg-0">
+                    <input class="navbar__search-input" type="text"/>
+                    <div class="navbar__search-img"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /Нав меню -->
+          <!-- Слайдер-->
+          <div class="simple__slider">
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+                  <div class="simple__slider-ttl">
+                    <div class="simple__slider-ttl-left"></div>
+                    <div class="simple__slider-ttl-txt">Доска объявлений</div>
+                    <div class="simple__slider-ttl-right"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+    <!-- /Header -->
+    <div class="doska bg-grey pb-5">
+      <div class="bg__right">
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+                  <!-- Крошки-->
+                  <div class="breabcrumbs"><a class="breabcrumbs__item" href="/">Главная</a>
+                    <div class="breabcrumbs__separ">/</div><a class="breabcrumbs__item" href="#">Первая страница</a>
+                    <div class="breabcrumbs__separ">/</div><a class="breabcrumbs__item" href="#">Вторая страница</a>
+                    <div class="breabcrumbs__separ">/</div>
+                    <div class="breabcrumbs__item breabcrumbs__item-current">Текущая страница</div>
+                  </div>
+                  <!-- /Крошки-->
+                </div>
+              </div>
+            </div>
+        <!-- Контент-->
+        <div class="container">
+          <div class="row mt-5">
+            <div class="col-12 col-md-4 mb-5 mb-md-0">
+                  <!-- Боковое меню-->
+                  <div class="side-menu"><a class="side-menu__item" href="#">Административно-территориальное деление Китая</a><a class="side-menu__item active" href="#">Политический строй. Китая</a><a class="side-menu__item" href="#">Правительство Китая</a><a class="side-menu__item" href="#">Состав Правительства Китая</a></div>
+              <div class="doska__big-red-button-wrap mt-4 mb-4">
+                    <!--! Большая красная кнопка-->
+                    <div class="big-red-button" id="big-red-button">Оставить объявление</div>
+                    <!--! /Большая красная кнопка-->
+              </div>
+            </div>
+            <div class="col-12 col-md-8">
+              <!-- Текст объявления-->
+              <div class="side-text-right">
+                <div class="side-text-right__ttl">
+                      <!-- Заголовок с чертой слева-->
+                      <div class="title-left">
+                        <div class="title-left__text">Предоставляю услуги по переводу с Китайского</div>
+                        <div class="title-left__line"></div>
+                      </div>
+                      <!-- /Заголовок с чертой слева-->
+                </div>
+                <div class="doska-inner__description mb-4 mt-4 flex-column flex-lg-row">
+                  <div class="doska-inner__description-photo mb-3" style="background-image: url(images/doska-inner__img.jpg)"></div>
+                  <div class="doska-inner__description-txt">
+                    <div class="doska-inner__description-txt-row">
+                      <div class="doska-inner__description-txt-row-ttl">Рубрика: </div>
+                      <div class="doska-inner__description-txt-row-txt">Рубрика 1</div>
+                    </div>
+                    <div class="doska-inner__description-txt-row">
+                      <div class="doska-inner__description-txt-row-ttl">Местоположение: </div>
+                      <div class="doska-inner__description-txt-row-txt">г.Москва</div>
+                    </div>
+                    <div class="doska-inner__description-txt-row">
+                      <div class="doska-inner__description-txt-row-ttl">Опыт работы: </div>
+                      <div class="doska-inner__description-txt-row-txt">Вебмастеру сгенерировать несколько абзацев более менее осмысленного текста.</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="side-text-right_txt">
+                  <p>Вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языкевебмастеру на русском языке вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языкевебмастеру на русском языке вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языкевебмастеру на русском языке вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языкевебмастеру на русском языке</p>
+                  <p>Вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке вебмастеру на русском языке вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языкевебмастеру на русском языке</p>
+                  <p>Вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке вебмастеру на русском языке вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языкевебмастеру на русском языке вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языкевебмастеру на русском языке вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языкевебмастеру на русском языке</p>
+                  <p>Вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке вебмастеру на русском языке вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языкевебмастеру на русском языке</p>
+                </div>
+              </div>
+              <!-- /Текст объявления-->
+            </div>
+          </div>
+        </div>
+        <!-- /Контент-->
+      </div>
+    </div>
+    <!-- УТП-->
+        <!-- УТП вер.1-->
+        <div class="utp1">
+          <div class="utp1__ttl">Качественные переводы с китайского языка</div>
+          <div class="utp1__txt">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке</div>
+          <div class="utp1__btn">
+                <!-- Стандартная красная кнопка-->
+                <button class="red-btn" type="button" id="take-order">Оформить заявку</button>
+                <!-- /Стандартная красная кнопка-->
+          </div>
+        </div>
+        <!-- /УТП вер.1-->
+    <!-- /УТП-->
+    <div class="main__bg-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="gos-standarts__adv-full-width-wrap">
+                  <!-- Баннер на всю ширину-->
+                  <div class="adv-full-width">Место для баннер рекламы на сайте</div>
+                  <!-- /Баннер на всю ширину-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Контент-->
+    <!-- /Контент-->
+    <!-- Footer -->
+    <!-- Возникли вопросы?-->
+    <div class="footer__form">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <div class="footer__form-ttl">Возникли вопросы? Оставь свои контактные данные и наш менеджер свяжется с вами</div>
+            <form class="footer__form-inputs">
+              <input class="footer__form-inputs-input" type="text" placeholder="Имя"/>
+              <input class="footer__form-inputs-input" type="phone" placeholder="Телефон"/>
+              <input class="footer__form-inputs-input" type="mail" placeholder="Email"/>
+              <input class="footer__form-inputs-input footer__form-inputs-input_submit" type="submit"/>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Возникли вопросы?-->
+    <footer><img class="footer__house-img" src="images/footer__house.png"/>
+      <div class="footer__ornament"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-5"><img class="footer__logo" src="images/logo__header.png"/>
+            <div class="footer__txt">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="footer__contacts">
+              <div class="footer__contacts-ttl">Контакты</div>
+              <div class="footer__contacts-row">
+                <div class="footer__contacts-row-left"><img class="footer__contacts-row-left-img" src="images/footer__telephone.png"/></div>
+                <div class="footer__contacts-row-right">
+                  <div class="footer__contacts-row-right-row">+375 44 265 25 12</div>
+                  <div class="footer__contacts-row-right-row">+375 44 123 45 78</div>
+                </div>
+              </div>
+              <div class="footer__contacts-row">
+                <div class="footer__contacts-row-left"><img class="footer__contacts-row-left-img" src="images/footer__mail.png"/></div>
+                <div class="footer__contacts-row-right">
+                  <div class="footer__contacts-row-right-txt">informblog@gmail.com</div>
+                </div>
+              </div>
+            </div>
+            <div class="footer__socials">
+              <div class="footer__socials-ttl footer__contacts-ttl">Мы в социальных сетях</div>
+              <div class="footer__socials-items">
+                <div class="footer__socials-items-item"><img class="footer__socials-items-item" src="images/footer__socials-vk.png"/></div>
+                <div class="footer__socials-items-item"><img class="footer__socials-items-item" src="images/footer__socials-skype.png"/></div>
+                <div class="footer__socials-items-item"><img class="footer__socials-items-item" src="images/footer__socials-inst.png"/></div>
+                <div class="footer__socials-items-item"><img class="footer__socials-items-item" src="images/footer__socials-fb.png"/></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="footer__nav-items">
+              <div class="footer__nav-item">Законы КНР</div>
+              <div class="footer__nav-item">Заказать перевод</div>
+              <div class="footer__nav-item">Полезные ссылки</div>
+              <div class="footer__nav-item">Переводчикам</div>
+              <div class="footer__nav-item">Госстандарты КНР</div>
+              <div class="footer__nav-item">Праздники и традиции Китая</div>
+              <div class="footer__nav-item">Новости и статьи</div>
+              <div class="footer__nav-item">О нас</div>
+              <div class="footer__nav-item">Доска объявлений</div>
+            </div>
+          </div>
+        </div>
+        <!-- Копирайт-->
+        <div class="row">
+          <div class="footer__separ"></div>
+        </div>
+        <div class="row">
+          <div class="footer__copyright">copyright ©2018 Все права защищены</div>
+        </div>
+      </div>
+    </footer>
+    <!-- Скрипты -->
+    <!-- Bootstrap-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="assets/slick.js"></script>
+    <script type="text/javascript" src="assets/scripts.js"></script>
+    <!-- Свои скрипты-->
+  </body>
+</html>
