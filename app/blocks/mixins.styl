@@ -91,10 +91,12 @@
   max-width 370px
   background-repeat no-repeat
   background-size cover
+  flex-shrink 0
 
 .block-pic-left__cntnt
   padding 20px 20px 35px 30px
   position relative
+  flex-shrink 1
 
 .block-pic-left__cntnt-ttl
   font-size 20px
@@ -449,3 +451,26 @@ a.breabcrumbs__item:hover
     font-size 36px
     line-height 36px
 //! /УТП вер.2
+
+//! Пагинация
+.pagination
+  display -webkit-flex
+  display -ms-flex
+  display flex
+
+.pagination__item
+  color #8c8c8c
+  font-size 22px
+  padding 0 8px
+
+.pagination__item:hover
+  color #8c8c8c
+
+.pagination__item.pagination__item-current
+  background-color textGreen
+  border-radius 50%
+  color #000
+  height 33px
+  width 33px
+  text-align center
+//! /Пагинация

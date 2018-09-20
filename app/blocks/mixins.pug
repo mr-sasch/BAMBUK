@@ -129,3 +129,14 @@ mixin utp2()
           .utp2__btn
             +redBtn('Загрузить текст', 'utp2')
   // /УТП вер.2
+
+  
+mixin pagination()
+  // Пагинация
+  .pagination
+    a(href='#').pagination__item 1
+    a(href='#').pagination__item 2
+    .pagination__item.pagination__item-current 3
+    .pagination__item ...
+    a(href='#').pagination__item 6
+  // /Пагинация

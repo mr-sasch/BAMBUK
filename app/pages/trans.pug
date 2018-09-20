@@ -4,12 +4,29 @@ block content
   // Header 
   +header__simple('trans__header-bg', 'Для переводчиков')
   // /Header 
-  .bg__right
+  .bg__right2
     +breabcrumbs()
     // Контент
-    .container
+    .container.pb-5
       .row
         .col-12.col-md-4
+          .trans__links.mb-4
+            .trans__links-ttl Ссылки на словари
+            .trans__links-items
+              a(href='#' target='_blank').trans__links-item Ссылка на словарь
+              a(href='#' target='_blank').trans__links-item Ссылка на словарь
+              a(href='#' target='_blank').trans__links-item Еще одна ссылка на словарь
+              a(href='#' target='_blank').trans__links-item Название ссылки 
+              a(href='#' target='_blank').trans__links-item Название словаря
+              a(href='#' target='_blank').trans__links-item Словарь в виде ссылки
+              a(href='#' target='_blank').trans__links-item И тут тоже ссылка
+              a(href='#' target='_blank').trans__links-item Название полезной ссылки
+              a(href='#' target='_blank').trans__links-item Название полезной ссылки
+              a(href='#' target='_blank').trans__links-item Название полезной ссылки
+              a(href='#' target='_blank').trans__links-item Еще одна ссылка на словарь
+              a(href='#' target='_blank').trans__links-item Словарь в виде ссылки
+              a(href='#' target='_blank').trans__links-item Название полезной ссылки
+            
           .trans__adv.mb-4.mb-md-0
             +advBanner()
         .trans-items.col-12.col-md-8
@@ -21,8 +38,8 @@ block content
             +blockTxtLeft('Заголовок статьи', 'Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более ', '#')
           .trans-item
             +blockTxtLeft('Заголовок статьи', 'Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более ', '#')
-          .trans-item
-            +blockTxtLeft('Заголовок статьи', 'Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более ', '#')
+          .trans__pagination
+            +pagination()
   
   // УТП
   .main__utp

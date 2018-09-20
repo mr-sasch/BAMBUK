@@ -273,10 +273,12 @@ footer {
   max-width: 370px;
   background-repeat: no-repeat;
   background-size: cover;
+  flex-shrink: 0;
 }
 .block-pic-left__cntnt {
   padding: 20px 20px 35px 30px;
   position: relative;
+  flex-shrink: 1;
 }
 .block-pic-left__cntnt-ttl {
   font-size: 20px;
@@ -615,6 +617,27 @@ a.breabcrumbs__item:hover {
     line-height: 36px;
   }
 }
+.pagination {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+}
+.pagination__item {
+  color: #8c8c8c;
+  font-size: 22px;
+  padding: 0 8px;
+}
+.pagination__item:hover {
+  color: #8c8c8c;
+}
+.pagination__item.pagination__item-current {
+  background-color: #bbd766;
+  border-radius: 50%;
+  color: #000;
+  height: 33px;
+  width: 33px;
+  text-align: center;
+}
 /* Главное меню */
 .navbar {
   width: 100%;
@@ -862,7 +885,7 @@ a.breabcrumbs__item:hover {
   }
   .block-pic-left__pic {
     height: 220px;
-    max-width: inherit;
+    max-width: inherit !important;
   }
 }
 /* /Последние актуальные новости */
@@ -897,7 +920,50 @@ a.breabcrumbs__item:hover {
   margin-bottom: 20px;
 }
 .trans-item .block-pic-left {
-  min-height: 200px;
+  min-height: 170px;
+}
+.trans-item .block-pic-left__pic {
+  max-width: 240px;
+  flex-shrink: 0;
+}
+.trans-item .block-pic-left__cntnt {
+  flex-shrink: 1;
+}
+.trans__links-items {
+  background-color: #faffe9;
+  border: 1px solid #bbd766;
+  padding: 20px 0;
+}
+.trans__links-item {
+  display: block;
+  color: #000;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 2px 20px 2px 40px;
+}
+.trans__links-item:hover {
+  color: #000;
+}
+.trans__links-ttl {
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  background-color: #adc85a;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55px;
+  padding-bottom: 2px;
+}
+.trans__pagination {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: flex-end;
 }
 /* Общие стили */
 .bg-grey {
@@ -906,6 +972,12 @@ a.breabcrumbs__item:hover {
 .bg__right {
   background-image: url("../images/bg__right.png");
   background-position: right bottom;
+  background-repeat: no-repeat;
+}
+.bg__right2 {
+  background-image: url("../images/bg__right2.png");
+  background-position: right center;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 /* /Общие стили */
