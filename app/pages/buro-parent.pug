@@ -1,0 +1,128 @@
+extends ../templates/template-simple
+
+block content  
+  // Header 
+  +header__simple('gosustroy__header-bg', 'Бюро переводов')
+  // /Header 
+  .bg__right
+    .bg__left
+      +breabcrumbs()
+      // Контент
+      .container
+        .row
+          .col-12
+            .gosustroy__intro Мы специализируемся на выполнении письменных переводов с китайского языка и предоставлении сопутствующих услуг. Благодаря многолетнему опыту работы мы в быстрые сроки и качественно осуществим перевод Ваших документов.
+        .buro-parent__we-do
+          .row.mt-5.mb-5
+            .col-12
+              .buro-parent__we-do-ttl.mb-4
+                +ttl-center('Мы выполняем')
+            .col-12
+              .buro-parent__we-do-items
+                .buro-parent__we-do-items-item
+                  img(src='images/buro-parent__we-do-items-item-icon1.png').buro-parent__we-do-items-item-icon
+                  .buro-parent__we-do-items-item-txt
+                    strong Перевод нормативно-правовых актов КНР
+                .buro-parent__we-do-items-item
+                  img(src='images/buro-parent__we-do-items-item-icon2.png').buro-parent__we-do-items-item-icon
+                  .buro-parent__we-do-items-item-txt
+                    strong Перевод личных документов 
+                    | (паспорта, удостоверения (личности, профессиональные, водительские, пенсионные и другие), свидетельства, аттестаты, дипломы, сертификаты и т.д.)
+                .buro-parent__we-do-items-item
+                  img(src='images/buro-parent__we-do-items-item-icon3.png').buro-parent__we-do-items-item-icon
+                  .buro-parent__we-do-items-item-txt
+                    strong Перевод медицинских текстов 
+                    | (истории болезни, рецепты, лекарства, протоколы операций, инструкции по использованию медицинского оборудования, заключения специалистов, фармацевтическая документация по клиническим исследованиям лекарственных препаратов, рекламные буклеты медицинских товаров и т.д.)
+                .buro-parent__we-do-items-item
+                  img(src='images/buro-parent__we-do-items-item-icon4.png').buro-parent__we-do-items-item-icon
+                  .buro-parent__we-do-items-item-txt
+                    strong Перевод экономических текстов 
+                    | (финансовые, бухгалтерские и другие отчёты, ведомости, счета, и маркетинговые исследования и пр.)
+                .buro-parent__we-do-items-item
+                  img(src='images/buro-parent__we-do-items-item-icon5.png').buro-parent__we-do-items-item-icon
+                  .buro-parent__we-do-items-item-txt
+                    strong Перевод юридических документов 
+                    | (уставы и прочие уставные документы, договоры, соглашения и т.д.)
+                .buro-parent__we-do-items-item
+                  img(src='images/buro-parent__we-do-items-item-icon6.png').buro-parent__we-do-items-item-icon
+                  .buro-parent__we-do-items-item-txt
+                    strong Перевод технической документации 
+                    | (чертежи, схемы, инструкции, государственные стандарты, рекламные материалы и т.д.)
+                .buro-parent__we-do-items-item
+                  img(src='images/buro-parent__we-do-items-item-icon7.png').buro-parent__we-do-items-item-icon
+                  .buro-parent__we-do-items-item-txt
+                    strong Перевод таможенных документов 
+                    | (упаковочные листы, инвойсы, спецификации, коносаменты и т.п.)
+    // Наши преимущества
+    .buro__preimusch
+      .container
+        .row
+          .col-12
+            .buro__preimusch-ttl
+              .buro__preimusch-ttl-txt
+                +ttl-left('Наши преимущества')
+              .buro__preimusch-ttl-icon.d-none.d-lg-block
+                img.buro__preimusch-ttl-icon-img(src='images/buro__preimusch-ttl-icon.png')
+            .buro__preimusch-items
+              mixin buro__preimusch-items-item(txt)
+                .buro__preimusch-items-item
+                  img.buro__preimusch-items-item-icon(src='images/buro__preimusch-items-item-icon.png')
+                  .buro__preimusch-items-item-txt= txt
+              +buro__preimusch-items-item('Перевод текстов любой тематики, сложности и объёма.')
+              +buro__preimusch-items-item('Удобная схема размещения заказа: вы можете отправить документы на перевод и получить переведённый текст по электронной почте.')
+              +buro__preimusch-items-item('Чёткая организация взаимодействия с клиентом на всех стадиях выполнения заказа.')
+              +buro__preimusch-items-item('Индивидуальный подход к каждому клиенту.')
+              +buro__preimusch-items-item('Удобство оплаты. Мы заранее рассчитываем стоимость конкретного перевода в зависимости от требований к нему. Возможна поэтапная оплата с отправкой соответствующих частей перевода.')
+              +buro__preimusch-items-item('Оперативность. Работаем без выходных и праздников, сроки исполнения заказа не зависят от государственного календаря.')
+    // /Наши преимущества
+    // Цены
+    .buro__prices
+      .container
+        .row
+          .col-12.mt-4.mb-4
+            .buro__prices-ttl
+              +ttl-left('Цены')
+          .col-12
+            .buro__prices-items
+              mixin buro__prices-item(ttl, txt, label)
+                .buro__prices-item(class= label)
+                  .buro__prices-item-ttl= ttl
+                  .buro__prices-item-txt= txt
+              .row
+                .col-12.col-md-6.col-lg-3.mb-4
+                  +buro__prices-item('Базовый тариф', 'применятся к текстам любой тематики и объёма при несрочном переводе и хорошем качестве оригинального текста (формат Word, Excel, качественные фотоизображения, разборчивый шрифт), составляет 550 рублей за 1 переводческую страницу = 1800 знаков с пробелами переведённого текста')
+                .col-12.col-md-6.col-lg-3.mb-4
+                  +buro__prices-item('Срочный тариф', 'наценка в размере 5-20 % за срочный перевод в зависимости от срочности и объёма, рассчитывается индивидуально.')
+                .col-12.col-md-6.col-lg-3.mb-4
+                  +buro__prices-item('Тариф за верстку', 'наценка в размере 5-20 %, рассчитывается индивидуально. При наличии надписей на схемах, рисунках, чертежах осуществляем их замещение на переведённый текст.')
+                .col-12.col-md-6.col-lg-3.mb-4
+                  +buro__prices-item('Тариф «законодательный»', 'мы предлагаем осуществить перевод законов КНР и прочих нормативных актов, интересных для широкой аудитории, по сниженной цене: от 500 до 1500 рублей за весь текст. В таком случае мы оставляем за собой право дальнейшего коммерческого использования переведённого документа.', 'buro__prices-item-special')
+              .row.mb-5
+                .col-12
+                  .buro__prices-spec-prop
+                    .buro__prices-spec-prop-ttl Специальное предложение для типовых документов
+                    .buro__prices-spec-prop-txt
+                      p 
+                        strong Перевод заграничного паспорта гражданина КНР (первая страница) 
+                        | – 200 руб. / шт. Всех страниц, содержащих текст и штампы на китайском языке – 500 руб. / шт.
+                      p 
+                        strong Перевод аттестатов, дипломов средних и высших учебных заведений КНР 
+                        | – 200 рублей за разворот, перевод обложки документа в подарок.
+                      p 
+                        strong Перевод водительского удостоверения КНР 
+                        | – 200 руб. / шт.
+    // /Цены
+    // /Контент    
+  // УТП
+  +utp2()
+  // /УТП
+  .main__bg-bottom
+    .container
+      .row
+        .col-12
+          .gos-standarts__adv-full-width-wrap
+            +advFullWidth()
+      .row
+        .col-12
+          +seo-center()
+  // /Контент

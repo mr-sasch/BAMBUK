@@ -738,6 +738,40 @@ a.breabcrumbs__item:hover {
 .navbar__navs-more {
   color: #d3d3d3;
 }
+.buro-parent__we-do .title-center__line-text {
+  font-size: 30px;
+  font-weight: 600;
+}
+.buro-parent__we-do-items-item {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.buro-parent__we-do-items-item-icon {
+  margin-right: 40px;
+}
+.buro-parent__we-do-items-item-txt {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 24px;
+}
+.buro-parent__we-do-items-item-txt strong {
+  font-weight: 600;
+}
+@media screen and (max-width: 450px) {
+  .buro-parent__we-do-items-item {
+    flex-direction: column;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #d3d3d3;
+  }
+  .buro-parent__we-do-items-item-icon {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
 .buro__preimusch {
   background-color: #9eb45a;
   padding: 30px 0;
@@ -807,6 +841,7 @@ a.breabcrumbs__item:hover {
 .buro__prices-item {
   box-shadow: 4px 4px 3px rgba(128,128,128,0.42);
   background-color: #f3f3f3;
+  height: 100%;
 }
 .buro__prices-spec-prop {
   box-shadow: 4px 4px 3px rgba(128,128,128,0.42);
@@ -1072,7 +1107,7 @@ a.breabcrumbs__item:hover {
 }
 .gosustroy__intro {
   font-size: 20px;
-  line-height: 20px;
+  line-height: 24px;
   font-weight: 300;
 }
 .side-text-right__ttl {
@@ -1316,6 +1351,11 @@ a.breabcrumbs__item:hover {
   background-image: url("../images/bg__right2.png");
   background-position: right center;
   background-size: cover;
+  background-repeat: no-repeat;
+}
+.bg__left {
+  background-image: url("../images/bg__left.png");
+  background-position: left center;
   background-repeat: no-repeat;
 }
 /* /Общие стили */
