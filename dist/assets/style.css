@@ -504,8 +504,10 @@ footer {
   flex-grow: 0;
   color: #bbd766;
   font-size: 3.6em;
+  line-height: 1em;
   font-weight: 700;
   padding: 50px 30px;
+  text-align: center;
 }
 @media screen and (max-width: 800px) {
   .simple__slider-ttl-txt {
@@ -1122,6 +1124,90 @@ a.breabcrumbs__item:hover {
   font-size: 16px;
   color: #343434;
   font-weight: 300;
+}
+.kitaevedi__header-bg {
+  background-image: url("../images/kitaevedi__header-bg.jpg");
+}
+.header_kitaevedi .simple__slider-ttl-txt {
+  max-width: 900px;
+}
+.kitaevedi__items {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-wrap: wrap;
+}
+.kitaevedi__items-ttl {
+  font-size: 24px;
+  font-weight: 600;
+  color: #000;
+}
+.kitaevedi__items-item {
+  text-align: center;
+  padding: 30px 15px;
+  border-left: 1px solid #dadada;
+  border-top: 1px solid #dadada;
+  background-color: transparent;
+  transition: 0.2s ease;
+  color: #000;
+}
+.kitaevedi__items-item:hover {
+  background-color: rgba(187,215,102,0.21);
+  color: #000;
+  text-decoration: none;
+}
+.kitaevedi__items-item:first-child {
+  border-left: none;
+}
+.kitaevedi__items-wrap .kitaevedi__items:last-child .kitaevedi__items-item {
+  border-bottom: 1px solid #dadada;
+}
+.kitaevedi__items-item-img {
+  width: 210px;
+  height: 210px;
+  border-radius: 50%;
+  box-shadow: 1px 0px 7px 2px rgba(128,128,128,0.722);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+.kitaevedi__items-item-ttl {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
+  padding: 15px 0;
+}
+.kitaevedi__items-item-descr {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 20px;
+}
+.kitaevedi__inst-ttl .title-left__text {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1em;
+}
+@media screen and (max-width: 992px) {
+  .kitaevedi__items-item:first-child {
+    border-left: 1px solid #dadada;
+  }
+  .kitaevedi__items-item {
+    border: 1px solid #dadada;
+  }
+}
+@media screen and (max-width: 767px) {
+  .kitaevedi__items-item,
+  .kitaevedi__items-item:first-child {
+    border: none;
+  }
+  .kitaevedi__items-item,
+  .kitaevedi__items-item:first-child {
+    border-bottom: 1px solid #dadada;
+  }
+  .kitaevedi__items-wrap .kitaevedi__items:first-child .kitaevedi__items-item:first-child {
+    border-top: 1px solid #dadada;
+  }
 }
 /* Главная */
 .main__news {
