@@ -252,6 +252,7 @@ footer {
   font-size: 16px;
   font-weight: 400;
   color: #000;
+  outline: none;
 }
 .block-pic-top__cntnt-href-a:hover {
   color: #000;
@@ -1125,6 +1126,32 @@ a.breabcrumbs__item:hover {
   color: #343434;
   font-weight: 300;
 }
+.doska-inner__description-txt-row {
+  line-height: 1.1em;
+  margin: 10px 0;
+}
+.trans__links-item {
+  line-height: 1em;
+  padding-left: 20px;
+}
+.kitaevedi__slider .kitaevedi__items-item {
+  display: block;
+  border-top: none;
+  border: 1px solid #dadada;
+}
+.kitaevedi__slider .kitaevedi__items-item:focus {
+  outline: none;
+}
+.kitaevedi__slider .trans-inner__slider-item-wrap {
+  height: initial;
+}
+.kitaevedi__slider .kitaevedi__items-item-img {
+  width: 190px;
+  height: 190px;
+}
+.nii__slider-item-wrap {
+  padding: 15px;
+}
 .kitaevedi__header-bg {
   background-image: url("../images/kitaevedi__header-bg.jpg");
 }
@@ -1423,6 +1450,16 @@ a.breabcrumbs__item:hover {
   display: -ms-flex;
   display: flex;
   justify-content: flex-end;
+}
+@media screen and (max-width: 1200px) {
+  .trans__links-item {
+    padding: 2px 20px 2px 20px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .doska-inner__description-txt {
+    padding-left: 0;
+  }
 }
 /* Общие стили */
 .bg-grey {
