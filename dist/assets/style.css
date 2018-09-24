@@ -1162,13 +1162,8 @@ a.breabcrumbs__item:hover {
   color: #343434;
   font-weight: 300;
 }
-.header__holidays-bg {
-  background-image: url("../images/header__holidays.jpg");
-}
-.bg-holidays {
-  background-image: url("../images/holidays_bg.png");
-  background-position: left bottom;
-  background-repeat: no-repeat;
+.header__holidays {
+  background-image: url("../images/header__holidays2.jpg");
 }
 .doska-inner__description-txt-row {
   line-height: 1.1em;
@@ -1279,6 +1274,14 @@ a.breabcrumbs__item:hover {
   .kitaevedi__items-wrap .kitaevedi__items:first-child .kitaevedi__items-item:first-child {
     border-top: 1px solid #dadada;
   }
+}
+.header__holidays-bg {
+  background-image: url("../images/header__holidays.jpg");
+}
+.bg-links {
+  background-image: url("../images/links_bg.png");
+  background-position: left bottom;
+  background-repeat: no-repeat;
 }
 /* Главная */
 .main__news {
