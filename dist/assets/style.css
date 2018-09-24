@@ -1165,6 +1165,11 @@ a.breabcrumbs__item:hover {
 .header__holidays-bg {
   background-image: url("../images/header__holidays.jpg");
 }
+.bg-holidays {
+  background-image: url("../images/holidays_bg.png");
+  background-position: left bottom;
+  background-repeat: no-repeat;
+}
 .doska-inner__description-txt-row {
   line-height: 1.1em;
   margin: 10px 0;
