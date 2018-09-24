@@ -14,17 +14,8 @@ block content
       .row.mt-5
         .col-12.col-md-4.mb-5.mb-md-0
           +sideMenu()
-          .trans__links.mb-4.mt-4
-            .trans__links-ttl Здесь могут быть ссылки
-            .trans__links-items
-              a(href='#' target='_blank').trans__links-item Название полезной ссылки
-              a(href='#' target='_blank').trans__links-item Название полезной ссылки
-              a(href='#' target='_blank').trans__links-item Название полезной ссылки
-              a(href='#' target='_blank').trans__links-item Название полезной ссылки
-              a(href='#' target='_blank').trans__links-item Название полезной ссылки
-              a(href='#' target='_blank').trans__links-item Название полезной ссылки
-              a(href='#' target='_blank').trans__links-item Название полезной ссылки
-              a(href='#' target='_blank').trans__links-item Название полезной ссылки
+          .mb-4.mt-4
+            +left-links()
         .col-12.col-md-8
           // Текст объявления
           .side-text-right

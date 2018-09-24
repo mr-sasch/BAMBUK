@@ -1,0 +1,91 @@
+extends ../templates/template-simple
+
+block content  
+  // Header 
+  +header__simple('doska__header-bg', 'Закодательство КНР')
+  // /Header 
+  .doska.bg-grey.pb-5
+    .bg__right
+      +breabcrumbs()
+      // Контент
+      .container
+        .row
+          .col-12
+            .gosustroy__intro В данном разделе  представлены сведения о правовой системе КНР, административно-территориальном делении КНР, структуре государственных органов. Здесь вы найдете такие основополагающие документы, как пятилетние планы экономического и социального развития КНР, а также доклады об их исполнении. Представлена коллекция нормативно-правовых актов КНР касательно обширного круга вопросов.
+        .row.mt-5
+          .col-12.col-md-4.mb-5.mb-md-0
+            +sideMenu()
+            .mt-4.mb-4
+              +left-links()
+          .col-12.col-md-8
+            +side-text-right()
+            // Законы
+            .doska__block
+              // Поиск
+              .doska__search-wrap
+                input(type='text' placeholder='Введите название...').doska__search
+              // /Поиск
+              // Айтемы
+              //- Миксины
+              mixin itemLeft()
+                .gos-standarts__item-left
+                  .gos-standarts__item-left-row.gos-standarts__item-left-row1 
+                    span.gos-standarts__item-left-row-number GB 25465 - 2010
+                    span.gos-standarts__item-left-row-name Нормы выброса загрязняющих веществ в алюминиевой промышленности
+                  .gos-standarts__item-left-row.gos-standarts__item-left-row2 
+                    span.gos-standarts__item-left-row-number GB 25465 - 2010
+                    span.gos-standarts__item-left-row-name 工染物排放准
+              mixin itemBuy()
+                .gos-standarts__item-right-buy
+                  .gos-standarts__item-right-buy-price 300 рублей
+                  .gos-standarts__item-right-buy-btn#gos-standarts__item-right-buy-btn Купить
+              //- /Миксины
+              .gos-standarts__items.mb-5
+                .gos-standarts__item
+                  +itemLeft()
+                  .gos-standarts__item-right
+                    +itemBuy()
+                .gos-standarts__item
+                  +itemLeft()
+                  .gos-standarts__item-right
+                    .gos-standarts__item-right-download#gos-standarts__item-right-download Скачать
+                .gos-standarts__item
+                  +itemLeft()
+                  .gos-standarts__item-right
+                    .gos-standarts__item-right-download#gos-standarts__item-right-download Скачать
+                .gos-standarts__item
+                  +itemLeft()
+                  .gos-standarts__item-right
+                    +itemBuy()
+                .gos-standarts__item
+                  +itemLeft()
+                  .gos-standarts__item-right
+                    +itemBuy()
+                .gos-standarts__item
+                  +itemLeft()
+                  .gos-standarts__item-right
+                    .gos-standarts__item-right-watch#gos-standarts__item-right-watch Просмотреть на сайте партнеров
+                .gos-standarts__item
+                  +itemLeft()
+                  .gos-standarts__item-right
+                    .gos-standarts__item-right-download#gos-standarts__item-right-download Скачать
+                // Пагинация
+                .mt-5.mr-5.mb-4
+                  .doska__pagination
+                    +pagination()
+                // /Пагинация
+              // /Айтемы
+            // /Законы
+              
+      // /Контент
+    
+  // УТП
+  +utp1('Качественные переводы с китайского языка', 'Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке', 'Оформить заявку', 'take-order')
+  // /УТП
+  .main__bg-bottom
+    .container
+      .row
+        .col-12
+          .gos-standarts__adv-full-width-wrap
+            +advFullWidth()
+  // /Контент
