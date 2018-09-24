@@ -1312,6 +1312,11 @@ a.breabcrumbs__item:hover {
   cursor: pointer;
 }
 /* /Главная */
+.news__last-news .title-left__text {
+  color: #494949;
+  font-size: 30px;
+  font-weight: 600;
+}
 .trans-inner__examples .title-left__text {
   font-size: 24px;
   font-weight: 600;
