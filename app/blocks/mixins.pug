@@ -173,3 +173,18 @@ mixin side-text-right()
       p Вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке вебмастеру
   // Текст в колонке справа
   
+mixin kitaevedi__item(classes)
+  // Карточка с человеком со ссылкой
+  a.col-12.col-md-6.col-lg-3.kitaevedi__items-item(href='#' class= classes)
+    .kitaevedi__items-item-img(style='background-image: url(images/doska-inner__img-round.jpg)')
+    .kitaevedi__items-item-ttl Евгения Савченко
+    .kitaevedi__items-item-descr Краткое описание китаеведа, информация о нем, откуда, какие.
+  // /Карточка с человеком со ссылкой
+
+mixin about__item(classes)
+  // Карточка с человеком без ссылки
+  .col-12.col-md-6.col-lg-4.text-center.mb-5
+    .kitaevedi__items-item-img(style='background-image: url(images/doska-inner__img-round.jpg)')
+    .kitaevedi__items-item-ttl Евгения Савченко
+    .kitaevedi__items-item-descr Краткое описание китаеведа, информация о нем, откуда, какие.
+  // /Карточка с человеком без ссылки

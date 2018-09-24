@@ -741,6 +741,42 @@ a.breabcrumbs__item:hover {
 .navbar__navs-more {
   color: #d3d3d3;
 }
+.about__header-bg {
+  background-image: url("../images/header__about.jpg");
+}
+.about__header-bg .simple__slider:before {
+  opacity: 0.25;
+}
+.about__cooperation {
+  border-right: 1px solid #e1e1e1;
+  padding-bottom: 20px;
+  height: 100%;
+}
+.about__cooperation-ttl,
+.about__support-ttl {
+  color: #474747;
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.about__cooperation-txt,
+.about__support-txt {
+  font-size: 18px;
+  font-weight: 300;
+  color: #0f0f0f;
+}
+.about__support-txt {
+  margin-bottom: 20px;
+}
+.about__support-form iframe {
+  border: 0;
+  box-shadow: 0 0 10px 0px rgba(128,128,128,0.71);
+}
+@media screen and (max-width: 991px) {
+  .about__cooperation {
+    border-right: none;
+  }
+}
 .buro-parent__we-do .title-center__line-text {
   font-size: 30px;
   font-weight: 600;
