@@ -1,20 +1,25 @@
 // Нав меню 
 .navbar
   .container
-    .row.w-100.m-auto
+    .row.w-100.m-auto.pb-3.pt-3.pb-md-0.pt-md-0
       .col-12.d-flex.justify-content-between.align-items-center.flex-column.flex-md-row
         .navbar__logo
-          img.navbar__logo-img(src='images/logo__header.png')
+          a(href='main.html')
+            img.navbar__logo-img(src='images/logo__header.png')
         .navbar__navs.flex-column.flex-lg-row.w-lg-100
-          a(href='#').navbar__navs-nav-a Законы КНР
+          a(href='buro.html').navbar__navs-nav-a Бюро переводов
           .navbar__navs-separ
-          a(href='#').navbar__navs-nav-a Заказать перевод
+          a(href='trans.html').navbar__navs-nav-a Для переводчиков
           .navbar__navs-separ
-          a(href='#').navbar__navs-nav-a Полезные ссылки
+          a(href='zakonod.html').navbar__navs-nav-a Законодательство Китая
           .navbar__navs-separ
-          a(href='#').navbar__navs-nav-a Китаеведы, НИИ
+          a(href='gos-ustroistvo.html').navbar__navs-nav-a Государственное устройство
           .navbar__navs-separ
-          .navbar__navs-more Еще
+          a(href='holidays.html').navbar__navs-nav-a Праздники и традиции
+          .navbar__navs-separ
+          a(href='kitaevedi.html').navbar__navs-nav-a Китаеведы, НИИ
+          .navbar__navs-separ
+          a(href='gos-standarts.html').navbar__navs-nav-a Госстандарты КНР
         .navbar__contacts
           .navbar__contacts-item
             img.navbar__contacts-item-phone-img(src='images/navbar__phone.png')
@@ -25,5 +30,4 @@
         .navbar__search.mt-3.mt-lg-0
           input(type='text').navbar__search-input
           .navbar__search-img
-          
 // /Нав меню 

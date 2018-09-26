@@ -1,9 +1,7 @@
 /*! Главное меню */
 .navbar
   width 100%
-  padding 20px 0
-  background-color bgnav
-  opacity .9
+  background-color rgba(#2d2d2d, 0.9)
 
 .navbar__navs
   display -webkit-flex
@@ -21,9 +19,11 @@
 .navbar__navs-nav-a
   color lightgrey
   transition .2s ease
-.navbar__navs-nav-a:hover
+.navbar__navs-nav-a:hover,
+.navbar__navs-nav-a.active
   text-decoration none
-  color #fff
+  color #9fbd55
+
 
 .navbar__contacts
   padding-right 10px
@@ -50,6 +50,7 @@
   position relative
   min-width 36px
   height 30px
+  background-color rgba(45,45,45,0.639)
 
 .navbar__search-input
   position absolute
@@ -62,6 +63,7 @@
   transition .2s ease
   color #fff
   padding-left 10px
+  border-radius 2px
 .navbar__search-input:focus
   background-color bgnav
   outline none
@@ -82,9 +84,32 @@
 .navbar__navs-separ
   width 1px
   background-color #fff
-  // margin 0 20px
+  margin 4px 0
 
 .navbar__navs-more
   color lightgrey
+  position relative
 
+.navbar__navs-more-navs
+  position absolute
+  display -webkit-flex
+  display -ms-flex
+  display flex
+  flex-direction column
+  background-color rgba(#2d2d2d, 0.9)
+  min-width 240px
+  right -20px
+  top 100%
+  padding 20px
+
+  opacity 0
+  top -1000px
+  transition opacity .2s ease
+
+.navbar__navs-more:hover .navbar__navs-more-navs
+  opacity 1
+  top 100%
+
+.navbar__navs-nav-a-more
+  padding 5px 0
 /* /Главное меню */
