@@ -92,8 +92,62 @@
         </div>
         <div class="row mt-5 mb-5">
           <div class="col-12 col-md-4 mb-5 mb-md-0">
-                <!-- Боковое меню-->
-                <div class="side-menu"><a class="side-menu__item" href="#">Административно-территориальное деление Китая</a><a class="side-menu__item active" href="#">Политический строй. Китая</a><a class="side-menu__item" href="#">Правительство Китая</a><a class="side-menu__item" href="#">Состав Правительства Китая</a></div>
+                <div class="catalog" id="sideMenu">
+                  <div class="catalog-item">
+                    <div class="catalog-item__ttl" onclick="mainSubMenu(event)">Заголовок меню 1</div>
+                    <div class="catalog-item__cntnt-wrap">
+                      <div class="catalog-item__cntnt">
+                        <!-- вложенное меню-->
+                        <div class="catalog catalog_sub">
+                          <div class="catalog-item">
+                            <div class="catalog-item__ttl" onclick="mainSubMenu(event)">Заголовок меню 1</div>
+                            <div class="catalog-item__cntnt-wrap">
+                              <div class="catalog-item__cntnt"><a class="catalog-menu__link" href="#">Ссылка</a><a class="catalog-menu__link" href="#">Ссылка</a><a class="catalog-menu__link" href="#">Ссылка</a></div>
+                            </div>
+                          </div>
+                        </div><a class="catalog-menu__link" href="#">Ссылка</a><a class="catalog-menu__link" href="#">Ссылка</a>
+                        <!-- вложенное меню-->
+                        <div class="catalog catalog_sub">
+                          <div class="catalog-item">
+                            <div class="catalog-item__ttl" onclick="mainSubMenu(event)">Заголовок меню 1</div>
+                            <div class="catalog-item__cntnt-wrap">
+                              <div class="catalog-item__cntnt"><a class="catalog-menu__link" href="#">Ссылка</a><a class="catalog-menu__link" href="#">Ссылка</a>
+                                <!-- вложенное меню-->
+                                <div class="catalog catalog_sub">
+                                  <div class="catalog-item">
+                                    <div class="catalog-item__ttl" onclick="mainSubMenu(event)">Заголовок меню 1</div>
+                                    <div class="catalog-item__cntnt-wrap">
+                                      <div class="catalog-item__cntnt"><a class="catalog-menu__link" href="#">Ссылка</a><a class="catalog-menu__link" href="#">Ссылка</a><a class="catalog-menu__link" href="#">Ссылка</a></div>
+                                    </div>
+                                  </div>
+                                </div><a class="catalog-menu__link" href="#">Ссылка</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div><a class="catalog-menu__link" href="#">Ссылка</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="catalog-item">
+                    <div class="catalog-item__ttl" onclick="mainSubMenu(event)">Заголовок меню 2</div>
+                    <div class="catalog-item__cntnt-wrap">
+                      <div class="catalog-item__cntnt"><a class="catalog-menu__link" href="#">Ссылка</a><a class="catalog-menu__link" href="#">Ссылка</a><a class="catalog-menu__link" href="#">Ссылка</a></div>
+                    </div>
+                  </div>
+                  <div class="catalog-item">
+                    <div class="catalog-item__ttl" onclick="mainSubMenu(event)">Заголовок меню 3</div>
+                    <div class="catalog-item__cntnt-wrap">
+                      <div class="catalog-item__cntnt"><a class="catalog-menu__link" href="#">Ссылка</a><a class="catalog-menu__link" href="#">Ссылка</a><a class="catalog-menu__link" href="#">Ссылка</a><a class="catalog-menu__link" href="#">Ссылка</a></div>
+                    </div>
+                  </div>
+                  <div class="catalog-item">
+                    <div class="catalog-item__ttl" onclick="mainSubMenu(event)">Заголовок меню 4</div>
+                    <div class="catalog-item__cntnt-wrap">
+                      <div class="catalog-item__cntnt"><a class="catalog-menu__link" href="#">Ссылка</a><a class="catalog-menu__link" href="#">Ссылка</a><a class="catalog-menu__link" href="#">Ссылка</a><a class="catalog-menu__link" href="#">Ссылка</a></div>
+                    </div>
+                  </div>
+                </div>
+                <script src="assets/side-menu.js"></script>
           </div>
           <div class="col-12 col-md-8">
             <div class="side-text-right">
