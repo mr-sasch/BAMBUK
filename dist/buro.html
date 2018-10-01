@@ -117,62 +117,38 @@
         </div>
         <div class="row mt-5 mb-5">
           <div class="col-12 col-md-4 mb-5 mb-md-0">
-                <div class="catalog" id="sideMenu">
-                  <div class="catalog-item">
-                    <div class="catalog-item__ttl" onclick="mainSubMenu(event)">Заголовок меню 1</div>
-                    <div class="catalog-item__cntnt-wrap">
-                      <div class="catalog-item__cntnt">
-                        <!-- вложенное меню-->
-                        <div class="catalog catalog_sub">
-                          <div class="catalog-item">
-                            <div class="catalog-item__ttl" onclick="mainSubMenu(event)">Заголовок меню 1</div>
-                            <div class="catalog-item__cntnt-wrap">
-                              <div class="catalog-item__cntnt"><a class="catalog-menu__link" href="#">Ссылка</a><a class="catalog-menu__link" href="#">Ссылка</a><a class="catalog-menu__link" href="#">Ссылка</a></div>
-                            </div>
-                          </div>
-                        </div><a class="catalog-menu__link" href="#">Ссылка</a><a class="catalog-menu__link" href="#">Ссылка</a>
-                        <!-- вложенное меню-->
-                        <div class="catalog catalog_sub">
-                          <div class="catalog-item">
-                            <div class="catalog-item__ttl" onclick="mainSubMenu(event)">Заголовок меню 1</div>
-                            <div class="catalog-item__cntnt-wrap">
-                              <div class="catalog-item__cntnt"><a class="catalog-menu__link" href="#">Ссылка</a><a class="catalog-menu__link" href="#">Ссылка</a>
-                                <!-- вложенное меню-->
-                                <div class="catalog catalog_sub">
-                                  <div class="catalog-item">
-                                    <div class="catalog-item__ttl" onclick="mainSubMenu(event)">Заголовок меню 1</div>
-                                    <div class="catalog-item__cntnt-wrap">
-                                      <div class="catalog-item__cntnt"><a class="catalog-menu__link" href="#">Ссылка</a><a class="catalog-menu__link" href="#">Ссылка</a><a class="catalog-menu__link" href="#">Ссылка</a></div>
-                                    </div>
-                                  </div>
-                                </div><a class="catalog-menu__link" href="#">Ссылка</a>
-                              </div>
-                            </div>
-                          </div>
-                        </div><a class="catalog-menu__link" href="#">Ссылка</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="catalog-item">
-                    <div class="catalog-item__ttl" onclick="mainSubMenu(event)">Заголовок меню 2</div>
-                    <div class="catalog-item__cntnt-wrap">
-                      <div class="catalog-item__cntnt"><a class="catalog-menu__link" href="#">Ссылка</a><a class="catalog-menu__link" href="#">Ссылка</a><a class="catalog-menu__link" href="#">Ссылка</a></div>
-                    </div>
-                  </div>
-                  <div class="catalog-item">
-                    <div class="catalog-item__ttl" onclick="mainSubMenu(event)">Заголовок меню 3</div>
-                    <div class="catalog-item__cntnt-wrap">
-                      <div class="catalog-item__cntnt"><a class="catalog-menu__link" href="#">Ссылка</a><a class="catalog-menu__link" href="#">Ссылка</a><a class="catalog-menu__link" href="#">Ссылка</a><a class="catalog-menu__link" href="#">Ссылка</a></div>
-                    </div>
-                  </div>
-                  <div class="catalog-item">
-                    <div class="catalog-item__ttl" onclick="mainSubMenu(event)">Заголовок меню 4</div>
-                    <div class="catalog-item__cntnt-wrap">
-                      <div class="catalog-item__cntnt"><a class="catalog-menu__link" href="#">Ссылка</a><a class="catalog-menu__link" href="#">Ссылка</a><a class="catalog-menu__link" href="#">Ссылка</a><a class="catalog-menu__link" href="#">Ссылка</a></div>
-                    </div>
-                  </div>
-                </div>
-                <script src="assets/side-menu.js"></script>
+                <ul class="catalog" id="sideMenu">
+                  <li class="catalog-menu__link">Ссылка
+                    <ul>
+                      <li class="catalog__submenu"><a class="catalog-menu__link" href="#">Ссылка</a></li>
+                      <li class="catalog__submenu"><a class="catalog-menu__link" href="#">Ссылка</a></li>
+                      <li class="catalog__submenu"><a class="catalog-menu__link" href="#">Ссылка</a></li>
+                    </ul>
+                  </li>
+                  <li class="catalog-menu__link">Ссылка
+                    <ul>
+                      <li class="catalog__submenu"><a class="catalog-menu__link" href="#">Ссылка</a></li>
+                      <li class="catalog__submenu"><a class="catalog-menu__link" href="#">Ссылка</a></li>
+                      <li class="catalog__submenu"><a class="catalog-menu__link" href="#">Ссылка</a></li>
+                    </ul>
+                  </li>
+                  <li class="catalog-menu__link">Ссылка
+                    <ul>
+                      <li class="catalog__submenu"><a class="catalog-menu__link" href="#">Ссылка</a></li>
+                      <li class="catalog__submenu"><a class="catalog-menu__link" href="#">Ссылка</a></li>
+                      <li class="catalog__submenu"><a class="catalog-menu__link" href="#">Ссылка</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <script>
+                  function handler( event ) {
+                    var target = $( event.target );
+                    if ( target.is( "li" ) ) {
+                      target.children().slideToggle();
+                    }
+                  }
+                  $( "ul" ).click( handler ).find( "ul" ).hide();
+                </script>
           </div>
           <div class="col-12 col-md-8">
             <div class="side-text-right">
