@@ -191,123 +191,45 @@ mixin about__item(classes)
 
 mixin sideMenuActive()
   ul.catalog#sideMenu
-    li.catalog-menu__link Ссылка
-      ul
-        li.catalog__submenu
-          a(href='#').catalog-menu__link Ссылка
-        li.catalog__submenu
-          a(href='#').catalog-menu__link Ссылка
-        li.catalog__submenu
-          a(href='#').catalog-menu__link Ссылка
-    li.catalog-menu__link Ссылка
-      ul
-        li.catalog__submenu
-          a(href='#').catalog-menu__link Ссылка
-        li.catalog__submenu
-          a(href='#').catalog-menu__link Ссылка
-        li.catalog__submenu
-          a(href='#').catalog-menu__link Ссылка
-    li.catalog-menu__link Ссылка
-      ul
-        li.catalog__submenu
-          a(href='#').catalog-menu__link Ссылка
-        li.catalog__submenu
-          a(href='#').catalog-menu__link Ссылка
-        li.catalog__submenu
-          a(href='#').catalog-menu__link Ссылка
-
-  //- .catalog#sideMenu
-  //-   a(href='#').catalog-menu__link.catalog-menu__link-parent Ссылка
-  //-   ul
-  //-     li.catalog__submenu
-  //-       a(href='#').catalog-menu__link Ссылка
-  //-     li.catalog__submenu
-  //-       a(href='#').catalog-menu__link Ссылка
-  //-     li.catalog__submenu
-  //-       a(href='#').catalog-menu__link Ссылка
-  //-   .catalog-item
-  //-     .catalog-item__ttl Заголовок меню 3
-  //-     .catalog-item__cntnt-wrap
-  //-       .catalog-item__cntnt
-  //-         a(href='#').catalog-menu__link Ссылка
-  //-         a(href='#').catalog-menu__link Ссылка
-  //-         a(href='#').catalog-menu__link Ссылка
-  //-         a(href='#').catalog-menu__link Ссылка
-  //-   .catalog-item
-  //-     .catalog-item__ttl Заголовок меню 4
-  //-     .catalog-item__cntnt-wrap
-  //-       .catalog-item__cntnt
-  //-         a(href='#').catalog-menu__link Ссылка
-  //-         a(href='#').catalog-menu__link Ссылка
-  //-         a(href='#').catalog-menu__link Ссылка
-  //-         a(href='#').catalog-menu__link Ссылка
+    li.catalog-menu__link.catalog-menu__link_parent-label Ссылка
+    // Вложенное меню
+    ul
+      li.catalog__submenu
+        li.catalog-menu__link.catalog-menu__link_parent-label Ссылка
+        // Вложенное меню
+        ul
+          li.catalog__submenu
+            a(href='#').catalog-menu__link Ссылка
+          li.catalog__submenu
+            a(href='#').catalog-menu__link Ссылка
+          li.catalog__submenu
+            a(href='#').catalog-menu__link Ссылка
+      li.catalog__submenu
+        a(href='#').catalog-menu__link Ссылка
+      li.catalog__submenu
+        a(href='#').catalog-menu__link Ссылка
+    li.catalog-menu__link.catalog-menu__link_parent-label Ссылка
+    ul
+      li.catalog__submenu
+        a(href='#').catalog-menu__link Ссылка
+      li.catalog__submenu
+        a(href='#').catalog-menu__link Ссылка
+      li.catalog__submenu
+        a(href='#').catalog-menu__link Ссылка
+    li.catalog-menu__link.catalog-menu__link_parent-label Ссылка
+    ul
+      li.catalog__submenu
+        a(href='#').catalog-menu__link Ссылка
+      li.catalog__submenu
+        a(href='#').catalog-menu__link Ссылка
+      li.catalog__submenu
+        a(href='#').catalog-menu__link Ссылка
   script.
     function handler( event ) {
       var target = $( event.target );
       if ( target.is( "li" ) ) {
-        target.children().slideToggle();
+        target.next().slideToggle();
+        target.toggleClass('active');
       }
     }
-    $( "ul" ).click( handler ).find( "ul" ).hide();
-//- Резерв
-//- mixin sideMenuActive()
-//-   .catalog#sideMenu
-//-     .catalog-item
-//-       .catalog-item__ttl(onclick='mainSubMenu(event)') Заголовок меню 1
-//-       .catalog-item__cntnt-wrap
-//-         .catalog-item__cntnt
-//-           // вложенное меню
-//-           .catalog.catalog_sub
-//-             .catalog-item
-//-               .catalog-item__ttl(onclick='mainSubMenu(event)') Заголовок меню 1
-//-               .catalog-item__cntnt-wrap
-//-                 .catalog-item__cntnt
-//-                   a(href='#').catalog-menu__link Ссылка
-//-                   a(href='#').catalog-menu__link Ссылка
-//-                   a(href='#').catalog-menu__link Ссылка
-//-           a(href='#').catalog-menu__link Ссылка
-//-           a(href='#').catalog-menu__link Ссылка
-//-           // вложенное меню
-//-           .catalog.catalog_sub
-//-             .catalog-item
-//-               .catalog-item__ttl(onclick='mainSubMenu(event)') Заголовок меню 1
-//-               .catalog-item__cntnt-wrap
-//-                 .catalog-item__cntnt
-//-                   a(href='#').catalog-menu__link Ссылка
-//-                   a(href='#').catalog-menu__link Ссылка
-//-                   // вложенное меню
-//-                   .catalog.catalog_sub
-//-                     .catalog-item
-//-                       .catalog-item__ttl(onclick='mainSubMenu(event)') Заголовок меню 1
-//-                       .catalog-item__cntnt-wrap
-//-                         .catalog-item__cntnt
-//-                           a(href='#').catalog-menu__link Ссылка
-//-                           a(href='#').catalog-menu__link Ссылка
-//-                           a(href='#').catalog-menu__link Ссылка
-//-                   a(href='#').catalog-menu__link Ссылка
-//-           a(href='#').catalog-menu__link Ссылка
-//- 
-//-     .catalog-item
-//-       .catalog-item__ttl(onclick='mainSubMenu(event)') Заголовок меню 2
-//-       .catalog-item__cntnt-wrap
-//-         .catalog-item__cntnt
-//-           a(href='#').catalog-menu__link Ссылка
-//-           a(href='#').catalog-menu__link Ссылка
-//-           a(href='#').catalog-menu__link Ссылка
-//-     .catalog-item
-//-       .catalog-item__ttl(onclick='mainSubMenu(event)') Заголовок меню 3
-//-       .catalog-item__cntnt-wrap
-//-         .catalog-item__cntnt
-//-           a(href='#').catalog-menu__link Ссылка
-//-           a(href='#').catalog-menu__link Ссылка
-//-           a(href='#').catalog-menu__link Ссылка
-//-           a(href='#').catalog-menu__link Ссылка
-//-     .catalog-item
-//-       .catalog-item__ttl(onclick='mainSubMenu(event)') Заголовок меню 4
-//-       .catalog-item__cntnt-wrap
-//-         .catalog-item__cntnt
-//-           a(href='#').catalog-menu__link Ссылка
-//-           a(href='#').catalog-menu__link Ссылка
-//-           a(href='#').catalog-menu__link Ссылка
-//-           a(href='#').catalog-menu__link Ссылка
-//-   script(src='assets/side-menu.js')
+    $( ".catalog" ).click( handler ).find( "ul" ).hide();

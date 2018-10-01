@@ -489,6 +489,14 @@ a.breabcrumbs__item:hover
 //! /Большая красная кнопка
 
 //! Боковое меню
+.catalog
+  padding-left 0px
+  ul
+    padding-left 0
+    list-style-type none
+    border 1px solid #8888885e
+    border-top none
+
 #sideMenu
   shadowTxtBlocks()
 .catalog-item
@@ -498,7 +506,6 @@ a.breabcrumbs__item:hover
   border-bottom 0
 .catalog-item:first-child
   border-bottom 1px solid textGreen
-
 
 .catalog-item__ttl,
 .catalog-menu__link
@@ -511,7 +518,8 @@ a.breabcrumbs__item:hover
   color #494949
   line-height 1em
 .catalog-item__ttl:hover,
-.catalog-menu__link:hover
+.catalog-menu__link:hover,
+.catalog-menu__link.active
   background-color #888
   color #fff
   text-decoration none
@@ -531,7 +539,8 @@ a.breabcrumbs__item:hover
   left 0
   transition .2s ease
 .catalog-item__ttl:hover:before,
-.catalog-menu__link:hover:before
+.catalog-menu__link:hover:before,
+.catalog-menu__link.active:before
   background-color textGreen
   text-decoration none
 
@@ -568,7 +577,6 @@ a.breabcrumbs__item:hover
 .catalog-menu__cntnt
   padding-left 15px
 
-
 .catalog-menu__link
   display block
   border-bottom 1px solid textGreen
@@ -576,5 +584,23 @@ a.breabcrumbs__item:hover
 .catalog-menu__ttl
   padding 5px 0
 
+.catalog-menu__link_parent-label
+  position relative
+
+.catalog-menu__link_parent-label:after
+  content ''
+  position absolute
+  right 20px
+  top 24px
+  height 10px
+  width 10px
+  border 2px solid textGreen
+  border-top none
+  border-left none
+  transform rotate(45deg)
+  transition .2s ease
+
+.catalog-menu__link_parent-label:hover:after
+  border-color #fff
 
 //! /Боковое меню

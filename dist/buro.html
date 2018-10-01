@@ -118,36 +118,43 @@
         <div class="row mt-5 mb-5">
           <div class="col-12 col-md-4 mb-5 mb-md-0">
                 <ul class="catalog" id="sideMenu">
-                  <li class="catalog-menu__link">Ссылка
-                    <ul>
-                      <li class="catalog__submenu"><a class="catalog-menu__link" href="#">Ссылка</a></li>
-                      <li class="catalog__submenu"><a class="catalog-menu__link" href="#">Ссылка</a></li>
-                      <li class="catalog__submenu"><a class="catalog-menu__link" href="#">Ссылка</a></li>
-                    </ul>
-                  </li>
-                  <li class="catalog-menu__link">Ссылка
-                    <ul>
-                      <li class="catalog__submenu"><a class="catalog-menu__link" href="#">Ссылка</a></li>
-                      <li class="catalog__submenu"><a class="catalog-menu__link" href="#">Ссылка</a></li>
-                      <li class="catalog__submenu"><a class="catalog-menu__link" href="#">Ссылка</a></li>
-                    </ul>
-                  </li>
-                  <li class="catalog-menu__link">Ссылка
-                    <ul>
-                      <li class="catalog__submenu"><a class="catalog-menu__link" href="#">Ссылка</a></li>
-                      <li class="catalog__submenu"><a class="catalog-menu__link" href="#">Ссылка</a></li>
-                      <li class="catalog__submenu"><a class="catalog-menu__link" href="#">Ссылка</a></li>
-                    </ul>
-                  </li>
+                  <li class="catalog-menu__link catalog-menu__link_parent-label">Ссылка</li>
+                  <!-- Вложенное меню-->
+                  <ul>
+                    <li class="catalog__submenu">
+                      <li class="catalog-menu__link catalog-menu__link_parent-label">Ссылка</li>
+                      <!-- Вложенное меню-->
+                      <ul>
+                        <li class="catalog__submenu"><a class="catalog-menu__link" href="#">Ссылка</a></li>
+                        <li class="catalog__submenu"><a class="catalog-menu__link" href="#">Ссылка</a></li>
+                        <li class="catalog__submenu"><a class="catalog-menu__link" href="#">Ссылка</a></li>
+                      </ul>
+                    </li>
+                    <li class="catalog__submenu"><a class="catalog-menu__link" href="#">Ссылка</a></li>
+                    <li class="catalog__submenu"><a class="catalog-menu__link" href="#">Ссылка</a></li>
+                  </ul>
+                  <li class="catalog-menu__link catalog-menu__link_parent-label">Ссылка</li>
+                  <ul>
+                    <li class="catalog__submenu"><a class="catalog-menu__link" href="#">Ссылка</a></li>
+                    <li class="catalog__submenu"><a class="catalog-menu__link" href="#">Ссылка</a></li>
+                    <li class="catalog__submenu"><a class="catalog-menu__link" href="#">Ссылка</a></li>
+                  </ul>
+                  <li class="catalog-menu__link catalog-menu__link_parent-label">Ссылка</li>
+                  <ul>
+                    <li class="catalog__submenu"><a class="catalog-menu__link" href="#">Ссылка</a></li>
+                    <li class="catalog__submenu"><a class="catalog-menu__link" href="#">Ссылка</a></li>
+                    <li class="catalog__submenu"><a class="catalog-menu__link" href="#">Ссылка</a></li>
+                  </ul>
                 </ul>
                 <script>
                   function handler( event ) {
                     var target = $( event.target );
                     if ( target.is( "li" ) ) {
-                      target.children().slideToggle();
+                      target.next().slideToggle();
+                      target.toggleClass('active');
                     }
                   }
-                  $( "ul" ).click( handler ).find( "ul" ).hide();
+                  $( ".catalog" ).click( handler ).find( "ul" ).hide();
                 </script>
           </div>
           <div class="col-12 col-md-8">
