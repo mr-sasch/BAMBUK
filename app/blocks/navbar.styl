@@ -112,4 +112,53 @@
 
 .navbar__navs-nav-a-more
   padding 5px 0
+
+.navbar__navs-nav
+  position relative
+
+.navbar__navs-nav-inner
+  position absolute
+  top -1000px
+  opacity 0
+  background-color rgba(0, 0, 0, 0.6)
+  padding 10px 0px
+  left -30px
+  right -30px
+  transition opacity .2s ease
+  z-index 20
+
+.navbar__navs-nav:hover
+  .navbar__navs-nav-inner
+    opacity 1
+    top 100%
+    transition opacity .2s ease
+
+.navbar__navs-inner-a
+  display block
+  color #d3d3d3
+  transition .2s ease
+  padding 4px 20px
+  line-height 1em
+
+.navbar__navs-inner-a:hover
+  color #9fbd55
+  text-decoration none
+
+.navbar__navs-nav_inner-label
+  position relative
+  width 6px
+  height 6px
+  display inline-block
+  padding 9px 6px
+
+.navbar__navs-nav_inner-label:before
+  position absolute
+  content ''
+  border 1px solid textGreen
+  width 6px
+  height 6px
+  border-left none
+  border-top none
+  transform rotate(45deg)
+
 /* /Главное меню */
