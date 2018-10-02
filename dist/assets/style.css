@@ -121,6 +121,28 @@ footer {
 .navbar__navs-nav-a.footer__nav-item {
   display: block;
 }
+.scroll-to-top {
+  z-index: 100;
+  width: 42px;
+  height: 42px;
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  text-align: center;
+  background-color: #bbd766;
+}
+.scroll-to-top:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  transform: rotate(135deg) translate(21%, 50%);
+  border: 2px solid #fff;
+  border-top: none;
+  border-right: none;
+}
 /* /Footer */
 /* Header Главная */
 .header__main {
