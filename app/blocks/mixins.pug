@@ -271,6 +271,13 @@ mixin seoText()
       }
       seoCont.classList.toggle('active');
       }
+      
+mixin kitaevedi__item(classes)
+  // Карточки китаеведов
+  a.kitaevedi__items-item(href='kitaevedi-inner.html' class= classes)
+    .kitaevedi__items-item-img(style='background-image: url(images/doska-inner__img-round.jpg)')
+    .kitaevedi__items-item-ttl Евгения Савченко
+    .kitaevedi__items-item-descr Краткое описание китаеведа, информация о нем, откуда, какие.
 
 mixin modal()
   // Модальное окно - оформить заявку на перевод
