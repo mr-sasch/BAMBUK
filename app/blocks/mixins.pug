@@ -39,7 +39,7 @@ mixin utp1(ttl, txt, btnTxt, btnId)
     .utp1__ttl= ttl
     .utp1__txt= txt
     .utp1__btn
-      +redBtn(btnTxt, btnId)
+      +redBtnModal(btnTxt, btnId)
   // /УТП вер.1
   
 mixin redBtn(btnTxt, btnId)
@@ -114,7 +114,7 @@ mixin utp2()
             | оценку стоимости перевода
           .utp2__txt Для точной оценки стоимость заказа, мы просим прислать Ваш текст на оценку или связаться с нами по телефону или электронной почте.
           .utp2__btn
-            +redBtn('Загрузить текст', 'utp2')
+            +redBtnModal2('Загрузить текст', 'utp2')
   // /УТП вер.2
 
   
@@ -127,12 +127,6 @@ mixin pagination()
     .pagination__item ...
     a(href='#').pagination__item 6
   // /Пагинация
-
-  
-mixin bigRedButton()
-  // Большая красная кнопка
-  .big-red-button#big-red-button Оставить объявление
-  // /Большая красная кнопка
 
 mixin left-links()
   // Ссылочный блок слева 
@@ -277,4 +271,78 @@ mixin seoText()
       }
       seoCont.classList.toggle('active');
       }
-    
+
+mixin modal()
+  // Модальное окно - оформить заявку на перевод
+  #modal1.modal.fade
+    .modal-dialog
+      .modal-content.pb-4.pt-4
+        .modal-content__title.pl-3.pr-3.text-center Оформить заявку на перевод
+        form#orderTranslation.modal-content__form(action="assets/send.php" method="POST")
+          .modal-content__form-cols.p-3.flex-column.flex-sm-row
+            .modal-content__form-cols-col.p-2
+              input.modal-content__form-cols-col-input(type='text' name='fio' placeholder='ФИО')
+              input.modal-content__form-cols-col-input(type='tel' name='phone' placeholder='+7(12) 345 67 89')
+              input.modal-content__form-cols-col-input(type='mail' name='mail' placeholder='Email')
+            .modal-content__form-cols-col.p-2
+              textarea.modal-content__form-cols-col-textarea(name='dopinfo' placeholder='Дополнительная информация')
+              .modal-content__form-cols-col-file(onclick="document.getElementById('orderTranslationFile').click()") Прикрепить файлы для перевода
+              input#orderTranslationFile(type='file' name='file' style='display:none;')
+          .modal-content__form-submit.pl-3.pr-3
+            +redBtnModalSubmit('Отправить')
+mixin modal2()
+  // Модальное окно - заказать бесплатную оценку стоимости
+  #modal2.modal.fade
+    .modal-dialog
+      .modal-content.pb-4.pt-4
+        .modal-content__title.pl-3.pr-3.text-center Заказать бесплатную оценку стоимости
+        form#orderOcenka.modal-content__form(action="assets/send.php" method="POST")
+          .modal-content__form-cols.p-3.flex-column.flex-sm-row
+            .modal-content__form-cols-col.p-2
+              input.modal-content__form-cols-col-input(type='text' name='fio' placeholder='ФИО')
+              input.modal-content__form-cols-col-input(type='tel' name='phone' placeholder='+7(12) 345 67 89')
+              input.modal-content__form-cols-col-input(type='mail' name='mail' placeholder='Email')
+            .modal-content__form-cols-col.p-2
+              textarea.modal-content__form-cols-col-textarea(name='dopinfo' placeholder='Дополнительная информация')
+              .modal-content__form-cols-col-file(onclick="document.getElementById('orderOcenkaFile').click()") Прикрепить файлы для перевода
+              input#orderOcenkaFile(type='file' name='file' style='display:none;')
+          .modal-content__form-submit.pl-3.pr-3
+            +redBtnModalSubmit('Отправить')
+mixin modal3()
+  // Модальное окно - Подать объявление
+  #modal3.modal.fade
+    .modal-dialog
+      .modal-content.pb-4.pt-4
+        .modal-content__title.pl-3.pr-3.text-center Оставить объявление на сайте
+        form#orderDoska.modal-content__form(action="assets/send.php" method="POST")
+          .modal-content__form-cols.p-3.flex-column.flex-sm-row
+            .modal-content__form-cols-col.p-2
+              input.modal-content__form-cols-col-input(type='text' name='fio' placeholder='ФИО')
+              input.modal-content__form-cols-col-input(type='tel' name='phone' placeholder='+7(12) 345 67 89')
+              input.modal-content__form-cols-col-input(type='mail' name='mail' placeholder='Email')
+            .modal-content__form-cols-col.p-2
+              textarea.modal-content__form-cols-col-textarea(name='dopinfo' placeholder='Текст объявления')
+              .modal-content__form-cols-col-file(onclick="document.getElementById('orderDoskaFile').click()") Загрузить фото
+              input#orderDoskaFile(type='file' name='file' style='display:none;')
+          .modal-content__form-submit.pl-3.pr-3
+            +redBtnModalSubmit('Отправить')
+
+mixin redBtnModal(btnTxt, btnId)
+  // Стандартная красная кнопка - вызов модалки
+  button(type='button' id= btnId data-toggle='modal' data-target='#modal1').red-btn= btnTxt
+  // /Стандартная красная кнопка - вызов модалки
+mixin redBtnModalSubmit(btnTxt)
+  // Стандартная красная кнопка - вызов модалки
+  button(type='submit').red-btn= btnTxt
+  // /Стандартная красная кнопка - вызов модалки
+
+mixin redBtnModal2(btnTxt, btnId)
+  // Стандартная красная кнопка - вызов модалки
+  button(type='button' id= btnId data-toggle='modal' data-target='#modal2').red-btn= btnTxt
+  // /Стандартная красная кнопка - вызов модалки
+
+  
+mixin bigRedButton()
+  // Большая красная кнопка
+  .big-red-button#big-red-button(data-toggle='modal' data-target='#modal3') Оставить объявление
+  // /Большая красная кнопка

@@ -147,9 +147,9 @@
             <div class="utp1__ttl">Качественные переводы с китайского языка</div>
             <div class="utp1__txt">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке</div>
             <div class="utp1__btn">
-                  <!-- Стандартная красная кнопка-->
-                  <button class="red-btn" type="button" id="main-utp-btn">Оформить заявку</button>
-                  <!-- /Стандартная красная кнопка-->
+                  <!-- Стандартная красная кнопка - вызов модалки-->
+                  <button class="red-btn" type="button" id="main-utp-btn" data-toggle="modal" data-target="#modal1">Оформить заявку</button>
+                  <!-- /Стандартная красная кнопка - вызов модалки-->
             </div>
           </div>
           <!-- /УТП вер.1-->
@@ -231,9 +231,9 @@
                 <div class="utp2__ttl">Заказать <span class="utp2__ttl-yellow">бесплатную </span>оценку стоимости перевода</div>
                 <div class="utp2__txt">Для точной оценки стоимость заказа, мы просим прислать Ваш текст на оценку или связаться с нами по телефону или электронной почте.</div>
                 <div class="utp2__btn">
-                      <!-- Стандартная красная кнопка-->
-                      <button class="red-btn" type="button" id="utp2">Загрузить текст</button>
-                      <!-- /Стандартная красная кнопка-->
+                      <!-- Стандартная красная кнопка - вызов модалки-->
+                      <button class="red-btn" type="button" id="utp2" data-toggle="modal" data-target="#modal2">Загрузить текст</button>
+                      <!-- /Стандартная красная кнопка - вызов модалки-->
                 </div>
               </div>
             </div>
@@ -312,8 +312,89 @@
           <div class="footer__separ"></div>
         </div>
         <div class="row">
-          <div class="footer__copyright">copyright ©2018 Все права защищены</div>
+          <div class="footer__copyright">copyright ©2018 Все права защищены      </div>
         </div>
+            <!-- Модальное окно - оформить заявку на перевод-->
+            <div class="modal fade" id="modal1">
+              <div class="modal-dialog">
+                <div class="modal-content pb-4 pt-4">
+                  <div class="modal-content__title pl-3 pr-3 text-center">Оформить заявку на перевод</div>
+                  <form class="modal-content__form" id="orderTranslation" action="assets/send.php" method="POST">
+                    <div class="modal-content__form-cols p-3 flex-column flex-sm-row">
+                      <div class="modal-content__form-cols-col p-2">
+                        <input class="modal-content__form-cols-col-input" type="text" name="fio" placeholder="ФИО"/>
+                        <input class="modal-content__form-cols-col-input" type="tel" name="phone" placeholder="+7(12) 345 67 89"/>
+                        <input class="modal-content__form-cols-col-input" type="mail" name="mail" placeholder="Email"/>
+                      </div>
+                      <div class="modal-content__form-cols-col p-2">
+                        <textarea class="modal-content__form-cols-col-textarea" name="dopinfo" placeholder="Дополнительная информация"></textarea>
+                        <div class="modal-content__form-cols-col-file" onclick="document.getElementById('orderTranslationFile').click()">Прикрепить файлы для перевода</div>
+                        <input id="orderTranslationFile" type="file" name="file" style="display:none;"/>
+                      </div>
+                    </div>
+                    <div class="modal-content__form-submit pl-3 pr-3">
+                          <!-- Стандартная красная кнопка - вызов модалки-->
+                          <button class="red-btn" type="submit">Отправить</button>
+                          <!-- /Стандартная красная кнопка - вызов модалки-->
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <!-- Модальное окно - заказать бесплатную оценку стоимости-->
+            <div class="modal fade" id="modal2">
+              <div class="modal-dialog">
+                <div class="modal-content pb-4 pt-4">
+                  <div class="modal-content__title pl-3 pr-3 text-center">Заказать бесплатную оценку стоимости</div>
+                  <form class="modal-content__form" id="orderOcenka" action="assets/send.php" method="POST">
+                    <div class="modal-content__form-cols p-3 flex-column flex-sm-row">
+                      <div class="modal-content__form-cols-col p-2">
+                        <input class="modal-content__form-cols-col-input" type="text" name="fio" placeholder="ФИО"/>
+                        <input class="modal-content__form-cols-col-input" type="tel" name="phone" placeholder="+7(12) 345 67 89"/>
+                        <input class="modal-content__form-cols-col-input" type="mail" name="mail" placeholder="Email"/>
+                      </div>
+                      <div class="modal-content__form-cols-col p-2">
+                        <textarea class="modal-content__form-cols-col-textarea" name="dopinfo" placeholder="Дополнительная информация"></textarea>
+                        <div class="modal-content__form-cols-col-file" onclick="document.getElementById('orderOcenkaFile').click()">Прикрепить файлы для перевода</div>
+                        <input id="orderOcenkaFile" type="file" name="file" style="display:none;"/>
+                      </div>
+                    </div>
+                    <div class="modal-content__form-submit pl-3 pr-3">
+                          <!-- Стандартная красная кнопка - вызов модалки-->
+                          <button class="red-btn" type="submit">Отправить</button>
+                          <!-- /Стандартная красная кнопка - вызов модалки-->
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <!-- Модальное окно - Подать объявление-->
+            <div class="modal fade" id="modal3">
+              <div class="modal-dialog">
+                <div class="modal-content pb-4 pt-4">
+                  <div class="modal-content__title pl-3 pr-3 text-center">Оставить объявление на сайте</div>
+                  <form class="modal-content__form" id="orderDoska" action="assets/send.php" method="POST">
+                    <div class="modal-content__form-cols p-3 flex-column flex-sm-row">
+                      <div class="modal-content__form-cols-col p-2">
+                        <input class="modal-content__form-cols-col-input" type="text" name="fio" placeholder="ФИО"/>
+                        <input class="modal-content__form-cols-col-input" type="tel" name="phone" placeholder="+7(12) 345 67 89"/>
+                        <input class="modal-content__form-cols-col-input" type="mail" name="mail" placeholder="Email"/>
+                      </div>
+                      <div class="modal-content__form-cols-col p-2">
+                        <textarea class="modal-content__form-cols-col-textarea" name="dopinfo" placeholder="Текст объявления"></textarea>
+                        <div class="modal-content__form-cols-col-file" onclick="document.getElementById('orderDoskaFile').click()">Загрузить фото</div>
+                        <input id="orderDoskaFile" type="file" name="file" style="display:none;"/>
+                      </div>
+                    </div>
+                    <div class="modal-content__form-submit pl-3 pr-3">
+                          <!-- Стандартная красная кнопка - вызов модалки-->
+                          <button class="red-btn" type="submit">Отправить</button>
+                          <!-- /Стандартная красная кнопка - вызов модалки-->
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
       </div>
     </footer>
     <!-- Прокрутка к началу страницы--><a class="scroll-to-top mobile-hide" href="#" style="display: none"></a>

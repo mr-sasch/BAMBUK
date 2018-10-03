@@ -803,6 +803,96 @@ a.breabcrumbs__item:hover {
 .catalog-menu__link_parent-label:hover:after {
   border-color: #fff;
 }
+.modal-dialog {
+  max-width: 800px !important;
+}
+.modal-content {
+  background-color: #adc85a;
+  background-image: url("../images/modal__bg-image.png");
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+.modal-content__form-cols {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: row;
+}
+.modal-content__form-cols-col {
+  width: 50%;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column;
+}
+#orderDoska .modal-content__form-cols-col:first-child {
+  width: 40%;
+}
+#orderDoska .modal-content__form-cols-col:last-child {
+  width: 60%;
+}
+.modal-content__form-cols-col-input,
+.modal-content__form-cols-col-textarea {
+  padding: 8px 13px;
+  font-style: italic;
+  margin: 7px 0;
+  border: none;
+  background-color: rgba(255,255,255,0.659);
+  transition: 0.2s ease;
+}
+.modal-content__form-cols-col-input:focus,
+.modal-content__form-cols-col-textarea:focus {
+  outline: none;
+  background-color: #fff;
+}
+.modal-content__form-cols-col-textarea {
+  flex-grow: 1;
+}
+.modal-content__form-cols-col-file {
+  position: relative;
+  background-color: #446c1e;
+  color: #fff;
+  font-style: italic;
+  font-weight: 300;
+  padding: 8px;
+  margin: 7px 0;
+  padding-left: 40px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+.modal-content__form-cols-col-file:hover {
+  background-color: #39581b;
+}
+.modal-content__form-cols-col-file:before {
+  content: '';
+  position: absolute;
+  background-image: url("../images/modal__skrepka.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 4px;
+  bottom: 4px;
+  left: 14px;
+  width: 15px;
+}
+.modal-content__form-submit .red-btn {
+  background-color: #830000;
+}
+.modal-content__form-submit {
+  text-align: center;
+}
+.modal-content__title {
+  font-size: 30px;
+  font-weight: 600;
+  color: #fff;
+  text-shadow: 1px 1px 5px #808080;
+}
+@media screen and (max-width: 575px) {
+  .modal-content__form-cols-col {
+    width: 100%;
+  }
+}
 /* Главное меню */
 .navbar {
   width: 100%;
