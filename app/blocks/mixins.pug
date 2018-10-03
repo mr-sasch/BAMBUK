@@ -326,6 +326,17 @@ mixin modal3()
               input#orderDoskaFile(type='file' name='file' style='display:none;')
           .modal-content__form-submit.pl-3.pr-3
             +redBtnModalSubmit('Отправить')
+            
+mixin modal4()
+  // Модальное окно - Законы
+  #modal4.modal.fade
+    .modal-dialog
+      .modal-content.modal-content_laws
+        .modal-content__img
+        .modal-content__ttl Закон о правах и вещах
+        .modal-content__intro Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему
+        .modal-content__txt Кратеок описание и так далее.Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык 
+        
 
 mixin redBtnModal(btnTxt, btnId)
   // Стандартная красная кнопка - вызов модалки

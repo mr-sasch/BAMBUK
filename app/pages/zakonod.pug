@@ -28,7 +28,7 @@ block content
               // Айтемы
               //- Миксины
               mixin itemLeft()
-                .gos-standarts__item-left
+                .gos-standarts__item-left(data-toggle='modal' data-target='#modal4')
                   .gos-standarts__item-left-row.gos-standarts__item-left-row1 
                     span.gos-standarts__item-left-row-number GB 25465 - 2010
                     span.gos-standarts__item-left-row-name Нормы выброса загрязняющих веществ в алюминиевой промышленности
@@ -88,4 +88,5 @@ block content
         .col-12
           .gos-standarts__adv-full-width-wrap
             +advFullWidth()
+  +modal4()
   // /Контент
