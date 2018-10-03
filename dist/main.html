@@ -59,7 +59,7 @@
                   <div class="navbar__navs-nav-inner d-none d-lg-inline-block"><a class="navbar__navs-inner-a" href="standarti-kachestva.html">Стандарты качества</a><a class="navbar__navs-inner-a" href="standarti-knr.html">Стандарты КНР</a><a class="navbar__navs-inner-a" href="sanitarnie-normi.html">Санитарные нормы</a></div>
                 </div>
               </div>
-              <div class="navbar__contacts">
+              <div class="navbar__contacts"> 
                 <div class="navbar__contacts-item"><img class="navbar__contacts-item-phone-img" src="images/navbar__phone.png"/>
                   <div class="navbar__contacts-item-txt">+375 44 265 25 12</div>
                 </div>
@@ -68,8 +68,11 @@
                 </div>
               </div>
               <div class="navbar__search mt-3 mt-lg-0">
-                <input class="navbar__search-input" type="text"/>
-                <div class="navbar__search-img"></div>
+                <form method="post" action="/">
+                  <input class="navbar__search-input" type="text"/>
+                  <button type="submit" style="display:none;"></button>
+                  <div class="navbar__search-img"></div>
+                </form>
               </div>
             </div>
           </div>

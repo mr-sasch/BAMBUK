@@ -68,7 +68,7 @@
               a(href='standarti-kachestva.html').navbar__navs-inner-a Стандарты качества
               a(href='standarti-knr.html').navbar__navs-inner-a Стандарты КНР
               a(href='sanitarnie-normi.html').navbar__navs-inner-a Санитарные нормы
-        .navbar__contacts
+        .navbar__contacts 
           .navbar__contacts-item
             img.navbar__contacts-item-phone-img(src='images/navbar__phone.png')
             .navbar__contacts-item-txt +375 44 265 25 12
@@ -76,6 +76,8 @@
             img.navbar__contacts-item-mail-img(src='images/navbar__mail.png')
             .navbar__contacts-item-txt infoport@gmail.com
         .navbar__search.mt-3.mt-lg-0
-          input(type='text').navbar__search-input
-          .navbar__search-img
+          form(method='post' action='/')
+            input(type='text').navbar__search-input
+            button(type='submit' style='display:none;')
+            .navbar__search-img
 // /Нав меню 
