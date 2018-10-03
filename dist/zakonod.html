@@ -164,7 +164,7 @@
                     <div class="gos-standarts__item-right">
                                       <div class="gos-standarts__item-right-buy">
                                         <div class="gos-standarts__item-right-buy-price">300 рублей</div>
-                                        <div class="gos-standarts__item-right-buy-btn" id="gos-standarts__item-right-buy-btn">Купить</div>
+                                        <div class="gos-standarts__item-right-buy-btn" id="gos-standarts__item-right-buy-btn" data-toggle="modal" data-target="#modal5">Купить</div>
                                       </div>
                     </div>
                   </div>
@@ -194,7 +194,7 @@
                     <div class="gos-standarts__item-right">
                                       <div class="gos-standarts__item-right-buy">
                                         <div class="gos-standarts__item-right-buy-price">300 рублей</div>
-                                        <div class="gos-standarts__item-right-buy-btn" id="gos-standarts__item-right-buy-btn">Купить</div>
+                                        <div class="gos-standarts__item-right-buy-btn" id="gos-standarts__item-right-buy-btn" data-toggle="modal" data-target="#modal5">Купить</div>
                                       </div>
                     </div>
                   </div>
@@ -206,7 +206,7 @@
                     <div class="gos-standarts__item-right">
                                       <div class="gos-standarts__item-right-buy">
                                         <div class="gos-standarts__item-right-buy-price">300 рублей</div>
-                                        <div class="gos-standarts__item-right-buy-btn" id="gos-standarts__item-right-buy-btn">Купить</div>
+                                        <div class="gos-standarts__item-right-buy-btn" id="gos-standarts__item-right-buy-btn" data-toggle="modal" data-target="#modal5">Купить</div>
                                       </div>
                     </div>
                   </div>
@@ -287,6 +287,31 @@
             </div>
           </div>
         </div>
+        <!-- Модальное окно - Купить-->
+        <div class="modal fade" id="modal5">
+          <div class="modal-dialog">
+            <div class="modal-content pb-4 pt-4">
+              <div class="modal-content__title pl-3 pr-3 text-center">Оставьте свои контактные данные и мы свяжемся с Вами, чтобы уточнить детали заказа</div>
+              <form class="modal-content__form" id="buy" action="assets/send.php" method="POST">
+                <div class="modal-content__form-cols p-3 flex-column flex-sm-row">
+                  <div class="modal-content__form-cols-col p-2">
+                    <input class="modal-content__form-cols-col-input" type="text" name="fio" placeholder="ФИО"/>
+                    <input class="modal-content__form-cols-col-input" type="tel" name="phone" placeholder="+7(123) 345 67 89"/>
+                    <input class="modal-content__form-cols-col-input" type="mail" name="mail" placeholder="Email"/>
+                  </div>
+                  <div class="modal-content__form-cols-col p-2">
+                    <textarea class="modal-content__form-cols-col-textarea" name="dopinfo" placeholder="Название закона или документа для перевода"></textarea>
+                  </div>
+                </div>
+                <div class="modal-content__form-submit pl-3 pr-3">
+                      <!-- Стандартная красная кнопка - вызов модалки-->
+                      <button class="red-btn" type="submit">Отправить</button>
+                      <!-- /Стандартная красная кнопка - вызов модалки-->
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
     <!-- /Контент-->
     <!-- /Контент-->
     <!-- Footer -->
@@ -356,7 +381,7 @@
                     <div class="modal-content__form-cols p-3 flex-column flex-sm-row">
                       <div class="modal-content__form-cols-col p-2">
                         <input class="modal-content__form-cols-col-input" type="text" name="fio" placeholder="ФИО"/>
-                        <input class="modal-content__form-cols-col-input" type="tel" name="phone" placeholder="+7(12) 345 67 89"/>
+                        <input class="modal-content__form-cols-col-input" type="tel" name="phone" placeholder="+7(123) 345 67 89"/>
                         <input class="modal-content__form-cols-col-input" type="mail" name="mail" placeholder="Email"/>
                       </div>
                       <div class="modal-content__form-cols-col p-2">
@@ -383,7 +408,7 @@
                     <div class="modal-content__form-cols p-3 flex-column flex-sm-row">
                       <div class="modal-content__form-cols-col p-2">
                         <input class="modal-content__form-cols-col-input" type="text" name="fio" placeholder="ФИО"/>
-                        <input class="modal-content__form-cols-col-input" type="tel" name="phone" placeholder="+7(12) 345 67 89"/>
+                        <input class="modal-content__form-cols-col-input" type="tel" name="phone" placeholder="+7(123) 345 67 89"/>
                         <input class="modal-content__form-cols-col-input" type="mail" name="mail" placeholder="Email"/>
                       </div>
                       <div class="modal-content__form-cols-col p-2">
@@ -410,7 +435,7 @@
                     <div class="modal-content__form-cols p-3 flex-column flex-sm-row">
                       <div class="modal-content__form-cols-col p-2">
                         <input class="modal-content__form-cols-col-input" type="text" name="fio" placeholder="ФИО"/>
-                        <input class="modal-content__form-cols-col-input" type="tel" name="phone" placeholder="+7(12) 345 67 89"/>
+                        <input class="modal-content__form-cols-col-input" type="tel" name="phone" placeholder="+7(123) 345 67 89"/>
                         <input class="modal-content__form-cols-col-input" type="mail" name="mail" placeholder="Email"/>
                       </div>
                       <div class="modal-content__form-cols-col p-2">

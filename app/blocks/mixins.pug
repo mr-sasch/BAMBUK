@@ -282,7 +282,7 @@ mixin modal()
           .modal-content__form-cols.p-3.flex-column.flex-sm-row
             .modal-content__form-cols-col.p-2
               input.modal-content__form-cols-col-input(type='text' name='fio' placeholder='ФИО')
-              input.modal-content__form-cols-col-input(type='tel' name='phone' placeholder='+7(12) 345 67 89')
+              input.modal-content__form-cols-col-input(type='tel' name='phone' placeholder='+7(123) 345 67 89')
               input.modal-content__form-cols-col-input(type='mail' name='mail' placeholder='Email')
             .modal-content__form-cols-col.p-2
               textarea.modal-content__form-cols-col-textarea(name='dopinfo' placeholder='Дополнительная информация')
@@ -300,7 +300,7 @@ mixin modal2()
           .modal-content__form-cols.p-3.flex-column.flex-sm-row
             .modal-content__form-cols-col.p-2
               input.modal-content__form-cols-col-input(type='text' name='fio' placeholder='ФИО')
-              input.modal-content__form-cols-col-input(type='tel' name='phone' placeholder='+7(12) 345 67 89')
+              input.modal-content__form-cols-col-input(type='tel' name='phone' placeholder='+7(123) 345 67 89')
               input.modal-content__form-cols-col-input(type='mail' name='mail' placeholder='Email')
             .modal-content__form-cols-col.p-2
               textarea.modal-content__form-cols-col-textarea(name='dopinfo' placeholder='Дополнительная информация')
@@ -318,7 +318,7 @@ mixin modal3()
           .modal-content__form-cols.p-3.flex-column.flex-sm-row
             .modal-content__form-cols-col.p-2
               input.modal-content__form-cols-col-input(type='text' name='fio' placeholder='ФИО')
-              input.modal-content__form-cols-col-input(type='tel' name='phone' placeholder='+7(12) 345 67 89')
+              input.modal-content__form-cols-col-input(type='tel' name='phone' placeholder='+7(123) 345 67 89')
               input.modal-content__form-cols-col-input(type='mail' name='mail' placeholder='Email')
             .modal-content__form-cols-col.p-2
               textarea.modal-content__form-cols-col-textarea(name='dopinfo' placeholder='Текст объявления')
@@ -326,7 +326,7 @@ mixin modal3()
               input#orderDoskaFile(type='file' name='file' style='display:none;')
           .modal-content__form-submit.pl-3.pr-3
             +redBtnModalSubmit('Отправить')
-            
+                        
 mixin modal4()
   // Модальное окно - Законы
   #modal4.modal.fade
@@ -337,6 +337,22 @@ mixin modal4()
         .modal-content__intro Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему
         .modal-content__txt Кратеок описание и так далее.Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык 
         
+mixin modal5()
+  // Модальное окно - Купить
+  #modal5.modal.fade
+    .modal-dialog
+      .modal-content.pb-4.pt-4
+        .modal-content__title.pl-3.pr-3.text-center Оставьте свои контактные данные и мы свяжемся с Вами, чтобы уточнить детали заказа
+        form#buy.modal-content__form(action="assets/send.php" method="POST")
+          .modal-content__form-cols.p-3.flex-column.flex-sm-row
+            .modal-content__form-cols-col.p-2
+              input.modal-content__form-cols-col-input(type='text' name='fio' placeholder='ФИО')
+              input.modal-content__form-cols-col-input(type='tel' name='phone' placeholder='+7(123) 345 67 89')
+              input.modal-content__form-cols-col-input(type='mail' name='mail' placeholder='Email')
+            .modal-content__form-cols-col.p-2
+              textarea.modal-content__form-cols-col-textarea(name='dopinfo' placeholder='Название закона или документа для перевода')
+          .modal-content__form-submit.pl-3.pr-3
+            +redBtnModalSubmit('Отправить')
 
 mixin redBtnModal(btnTxt, btnId)
   // Стандартная красная кнопка - вызов модалки

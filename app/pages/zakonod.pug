@@ -38,7 +38,7 @@ block content
               mixin itemBuy()
                 .gos-standarts__item-right-buy
                   .gos-standarts__item-right-buy-price 300 рублей
-                  .gos-standarts__item-right-buy-btn#gos-standarts__item-right-buy-btn Купить
+                  .gos-standarts__item-right-buy-btn#gos-standarts__item-right-buy-btn(data-toggle='modal' data-target='#modal5') Купить
               //- /Миксины
               .gos-standarts__items.mb-5
                 .gos-standarts__item
@@ -89,4 +89,5 @@ block content
           .gos-standarts__adv-full-width-wrap
             +advFullWidth()
   +modal4()
+  +modal5()
   // /Контент
