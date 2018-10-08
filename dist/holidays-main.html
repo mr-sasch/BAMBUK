@@ -95,6 +95,8 @@
             </div>
           </div>
         </header>
+    <script src="assets/zabuto_calendar.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/zabuto_calendar.css"/>
     <!-- /Header -->
     <div class="bg__right">
       <div class="bg__left">
@@ -115,7 +117,39 @@
         <!-- Контент-->
         <div class="container">
           <div class="row">
-            <div class="col-12 col-md-6 col-lg-3 mb-4"></div>
+            <div class="col-12 col-md-6 col-lg-3 mb-4">
+              <!-- Календарь-->
+              <div id="holiday-calendar"></div>
+              <script type="application/javascript">
+                var eventData = [
+                  {
+                    "date":"2018-10-15",
+                    "badge":true,
+                    "title":"Китайский Новый Год",
+                    "body":"<p><h1>Китайский Новый Год</h1></p><p class=\"lead\">Party<\/p><p>Like it's 1999.<\/p>",
+                    "classname":"purple-event",
+                    modal: true
+                  },
+                  {
+                    "date":"2018-10-10",
+                    "badge":false,
+                    "title":"Старый Новый Год",
+                    "body":"<p class=\"lead\">Party<\/p><p>Like it's 1999.<\/p>",
+                    "footer":"At Paisley Park",
+                    "classname":"purple-event",
+                    modal: true
+                  }
+                ];
+                
+                $(document).ready(function () {
+                  $("#holiday-calendar").zabuto_calendar({
+                    language: "ru",
+                    data: eventData
+                  });
+                });
+              </script>
+              <!-- /Календарь-->
+            </div>
             <div class="col-12 col-md-6 col-lg-9 mb-4">
               <div class="holidays__banner">
                 <div class="holidays__banner-cntnt">

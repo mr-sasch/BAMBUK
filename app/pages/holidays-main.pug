@@ -3,6 +3,8 @@ extends ../templates/template-simple
 block content  
   // Header 
   +header__simple('header__holidays', 'Праздники и традиции Китая')
+  script(src='assets/zabuto_calendar.js')
+  link(rel="stylesheet" type="text/css" href="assets/zabuto_calendar.css")
   // /Header 
   .bg__right
     .bg__left
@@ -11,6 +13,36 @@ block content
       .container
         .row
           .col-12.col-md-6.col-lg-3.mb-4
+            // Календарь
+            #holiday-calendar
+            script(type="application/javascript").
+              var eventData = [
+                {
+                  "date":"2018-10-15",
+                  "badge":true,
+                  "title":"Китайский Новый Год",
+                  "body":"<p><h1>Китайский Новый Год</h1></p><p class=\"lead\">Party<\/p><p>Like it's 1999.<\/p>",
+                  "classname":"purple-event",
+                  modal: true
+                },
+                {
+                  "date":"2018-10-10",
+                  "badge":false,
+                  "title":"Старый Новый Год",
+                  "body":"<p class=\"lead\">Party<\/p><p>Like it's 1999.<\/p>",
+                  "footer":"At Paisley Park",
+                  "classname":"purple-event",
+                  modal: true
+                }
+              ];
+              
+              $(document).ready(function () {
+                $("#holiday-calendar").zabuto_calendar({
+                  language: "ru",
+                  data: eventData
+                });
+              });
+            // /Календарь
           .col-12.col-md-6.col-lg-9.mb-4
             .holidays__banner
               .holidays__banner-cntnt
