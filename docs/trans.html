@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+    <title>Document</title>
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"/>
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"/>
+    <!-- Стили -->
+    <link rel="stylesheet" type="text/css" href="assets/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/style.css"/>
+    <!-- Шрифты-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&amp;amp;subset=cyrillic" rel="stylesheet"/>
+  </head>
+  <body>
+    <!-- Header -->
+        <header class="header__simple trans__header-bg">
+          <!-- Нав меню -->
+          <div class="navbar">
+            <div class="container">
+              <div class="row w-100 m-auto pb-3 pt-3 pb-md-0 pt-md-0">
+                <div class="col-12 d-flex justify-content-between align-items-center flex-column flex-md-row p-0">
+                  <div class="navbar__logo"><a href="main.html"><img class="navbar__logo-img" src="images/logo__header.png"/></a></div>
+                  <div class="navbar__navs flex-column flex-lg-row w-lg-100">
+                    <div class="navbar__navs-nav"><a class="navbar__navs-nav-a" href="buro.html">Бюро переводов</a>
+                      <div class="navbar__navs-nav_inner-label d-none d-lg-inline-block"></div>
+                      <div class="navbar__navs-nav-inner d-none d-lg-inline-block"><a class="navbar__navs-inner-a" href="vostokovedi.html">Переводы с китайского языка</a><a class="navbar__navs-inner-a" href="vostokovedi.html">Услуги переводчика</a><a class="navbar__navs-inner-a" href="vostokovedi.html">Срочные переводы</a><a class="navbar__navs-inner-a" href="vostokovedi.html">Письменные переводы</a></div>
+                    </div>
+                    <div class="navbar__navs-separ"></div>
+                    <div class="navbar__navs-nav"><a class="navbar__navs-nav-a" href="trans.html">Для переводчиков</a>
+                      <div class="navbar__navs-nav_inner-label d-none d-lg-inline-block"></div>
+                      <div class="navbar__navs-nav-inner d-none d-lg-inline-block"><a class="navbar__navs-inner-a" href="pravila-perevoda.html">Правила перевода с китайского языка</a><a class="navbar__navs-inner-a" href="obrazci-perevodov.html">Образцы переводов документов</a><a class="navbar__navs-inner-a" href="online-perevodchiki.html">Онлайн-переводчики</a></div>
+                    </div>
+                    <div class="navbar__navs-separ"></div>
+                    <div class="navbar__navs-nav"><a class="navbar__navs-nav-a" href="zakonod.html">Законодательство Китая</a>
+                      <div class="navbar__navs-nav_inner-label d-none d-lg-inline-block"></div>
+                      <div class="navbar__navs-nav-inner d-none d-lg-inline-block"><a class="navbar__navs-inner-a" href="pravila-perevoda.html">Переводы законов Китая</a><a class="navbar__navs-inner-a" href="pravila-perevoda.html">Конституция Китая</a><a class="navbar__navs-inner-a" href="pravila-perevoda.html">Законодательство Китая</a><a class="navbar__navs-inner-a" href="pravila-perevoda.html">Законы Китая</a><a class="navbar__navs-inner-a" href="pravila-perevoda.html">Гражданско-процессуальный кодекс Китая</a><a class="navbar__navs-inner-a" href="pravila-perevoda.html">Нормативно-правовые акты Китая</a><a class="navbar__navs-inner-a" href="pravila-perevoda.html">Правовая система Китая</a><a class="navbar__navs-inner-a" href="pravila-perevoda.html">Право Китая</a><a class="navbar__navs-inner-a" href="pravila-perevoda.html">Планы социально-экономического развития Китая</a></div>
+                    </div>
+                    <div class="navbar__navs-separ"></div>
+                    <div class="navbar__navs-nav"><a class="navbar__navs-nav-a" href="gos-ustroistvo.html">Государственное устройство</a>
+                      <div class="navbar__navs-nav_inner-label d-none d-lg-inline-block"></div>
+                      <div class="navbar__navs-nav-inner d-none d-lg-inline-block"><a class="navbar__navs-inner-a" href="pravila-perevoda.html">Административно-территориальное деление Китая</a><a class="navbar__navs-inner-a" href="pravila-perevoda.html">Политический строй Китая</a><a class="navbar__navs-inner-a" href="pravila-perevoda.html">Органы власти Китая</a><a class="navbar__navs-inner-a" href="pravila-perevoda.html">Правительство Китая</a><a class="navbar__navs-inner-a" href="pravila-perevoda.html">Состав Правительства Китая</a><a class="navbar__navs-inner-a" href="pravila-perevoda.html">Глава Правительства Китая</a></div>
+                    </div>
+                    <div class="navbar__navs-separ"></div>
+                    <div class="navbar__navs-nav"> <a class="navbar__navs-nav-a" href="holidays-main.html">Праздники и традиции</a></div>
+                    <div class="navbar__navs-separ"></div>
+                    <div class="navbar__navs-nav"><a class="navbar__navs-nav-a" href="kitaevedi.html">Китаеведы, НИИ</a>
+                      <div class="navbar__navs-nav_inner-label d-none d-lg-inline-block"></div>
+                      <div class="navbar__navs-nav-inner d-none d-lg-inline-block"><a class="navbar__navs-inner-a" href="vostokovedi.html">Востоковеды</a><a class="navbar__navs-inner-a" href="kitaisti.html">Китаисты</a><a class="navbar__navs-inner-a" href="sinologi.html">Синологи</a><a class="navbar__navs-inner-a" href="znatoki.html">Знатоки Китая</a></div>
+                    </div>
+                    <div class="navbar__navs-separ"></div>
+                    <div class="navbar__navs-nav"><a class="navbar__navs-nav-a" href="gos-standarts.html">Госстандарты КНР</a>
+                      <div class="navbar__navs-nav_inner-label d-none d-lg-inline-block"></div>
+                      <div class="navbar__navs-nav-inner d-none d-lg-inline-block"><a class="navbar__navs-inner-a" href="standarti-kachestva.html">Стандарты качества</a><a class="navbar__navs-inner-a" href="standarti-knr.html">Стандарты КНР</a><a class="navbar__navs-inner-a" href="sanitarnie-normi.html">Санитарные нормы</a></div>
+                    </div>
+                  </div>
+                  <div class="navbar__contacts"> 
+                    <div class="navbar__contacts-item"><img class="navbar__contacts-item-phone-img" src="images/navbar__phone.png"/>
+                      <div class="navbar__contacts-item-txt">+375 44 265 25 12</div>
+                    </div>
+                    <div class="navbar__contacts-item"><img class="navbar__contacts-item-mail-img" src="images/navbar__mail.png"/>
+                      <div class="navbar__contacts-item-txt">infoport@gmail.com</div>
+                    </div>
+                  </div>
+                  <div class="navbar__search mt-3 mt-lg-0">
+                    <form method="post" action="/">
+                      <input class="navbar__search-input" type="text"/>
+                      <button type="submit" style="display:none;"></button>
+                      <div class="navbar__search-img"></div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /Нав меню -->
+          <!-- Слайдер-->
+          <div class="simple__slider">
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+                  <div class="simple__slider-ttl">
+                    <div class="simple__slider-ttl-left"></div>
+                    <div class="simple__slider-ttl-txt">Для переводчиков</div>
+                    <div class="simple__slider-ttl-right"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+    <!-- /Header -->
+    <div class="bg__right2">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <!-- Крошки-->
+                <div class="breabcrumbs"><a class="breabcrumbs__item" href="/">Главная</a>
+                  <div class="breabcrumbs__separ">/</div><a class="breabcrumbs__item" href="#">Первая страница</a>
+                  <div class="breabcrumbs__separ">/</div><a class="breabcrumbs__item" href="#">Вторая страница</a>
+                  <div class="breabcrumbs__separ">/</div>
+                  <div class="breabcrumbs__item breabcrumbs__item-current">Текущая страница</div>
+                </div>
+                <!-- /Крошки-->
+              </div>
+            </div>
+          </div>
+      <!-- Контент-->
+      <div class="container pb-5">
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <div class="trans__links mb-4">
+              <div class="trans__links-ttl">Ссылки на словари</div>
+              <div class="trans__links-items"><a class="trans__links-item" href="#" target="_blank">Ссылка на словарь</a><a class="trans__links-item" href="#" target="_blank">Ссылка на словарь</a><a class="trans__links-item" href="#" target="_blank">Еще одна ссылка на словарь</a><a class="trans__links-item" href="#" target="_blank">Название ссылки </a><a class="trans__links-item" href="#" target="_blank">Название словаря</a><a class="trans__links-item" href="#" target="_blank">Словарь в виде ссылки</a><a class="trans__links-item" href="#" target="_blank">И тут тоже ссылка</a><a class="trans__links-item" href="#" target="_blank">Название полезной ссылки</a><a class="trans__links-item" href="#" target="_blank">Название полезной ссылки</a><a class="trans__links-item" href="#" target="_blank">Название полезной ссылки</a><a class="trans__links-item" href="#" target="_blank">Еще одна ссылка на словарь</a><a class="trans__links-item" href="#" target="_blank">Словарь в виде ссылки</a><a class="trans__links-item" href="#" target="_blank">Название полезной ссылки</a></div>
+            </div>
+            <div class="trans__adv mb-4 mb-md-0">
+                  <!-- Рекламный баннер-->
+                  <div class="adv-banner">
+                    <div class="adv-banner__txt">Какой-то интересный заголовок может быть здесь. Кликабельный</div>
+                  </div>
+                  <!-- /Рекламный баннер-->
+            </div>
+          </div>
+          <div class="trans-items col-12 col-md-8">
+            <div class="trans-item">
+                  <!-- Текстовый блок с картинкой слева-->
+                  <div class="block-pic-left">
+                    <div class="block-pic-left__pic" style="background-image:url('images/main__articles-3.jpg');"></div>
+                    <div class="block-pic-left__cntnt">
+                      <div class="block-pic-left__cntnt-ttl">Заголовок статьи</div>
+                      <div class="block-pic-left__cntnt-txt">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более </div>
+                      <div class="block-pic-left__cntnt-href"><a class="block-pic-left__cntnt-href-a" href="news-inner.html">Читать полностью</a></div>
+                    </div>
+                  </div>
+                  <!-- /Текстовый блок с картинкой слева-->
+            </div>
+            <div class="trans-item">
+                  <!-- Текстовый блок с картинкой слева-->
+                  <div class="block-pic-left">
+                    <div class="block-pic-left__pic" style="background-image:url('images/main__articles-3.jpg');"></div>
+                    <div class="block-pic-left__cntnt">
+                      <div class="block-pic-left__cntnt-ttl">Заголовок статьи</div>
+                      <div class="block-pic-left__cntnt-txt">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более </div>
+                      <div class="block-pic-left__cntnt-href"><a class="block-pic-left__cntnt-href-a" href="news-inner.html">Читать полностью</a></div>
+                    </div>
+                  </div>
+                  <!-- /Текстовый блок с картинкой слева-->
+            </div>
+            <div class="trans-item">
+                  <!-- Текстовый блок с картинкой слева-->
+                  <div class="block-pic-left">
+                    <div class="block-pic-left__pic" style="background-image:url('images/main__articles-3.jpg');"></div>
+                    <div class="block-pic-left__cntnt">
+                      <div class="block-pic-left__cntnt-ttl">Заголовок статьи</div>
+                      <div class="block-pic-left__cntnt-txt">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более </div>
+                      <div class="block-pic-left__cntnt-href"><a class="block-pic-left__cntnt-href-a" href="news-inner.html">Читать полностью</a></div>
+                    </div>
+                  </div>
+                  <!-- /Текстовый блок с картинкой слева-->
+            </div>
+            <div class="trans-item">
+                  <!-- Текстовый блок с картинкой слева-->
+                  <div class="block-pic-left">
+                    <div class="block-pic-left__pic" style="background-image:url('images/main__articles-3.jpg');"></div>
+                    <div class="block-pic-left__cntnt">
+                      <div class="block-pic-left__cntnt-ttl">Заголовок статьи</div>
+                      <div class="block-pic-left__cntnt-txt">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более </div>
+                      <div class="block-pic-left__cntnt-href"><a class="block-pic-left__cntnt-href-a" href="news-inner.html">Читать полностью</a></div>
+                    </div>
+                  </div>
+                  <!-- /Текстовый блок с картинкой слева-->
+            </div>
+            <div class="trans__pagination">
+                  <!-- Пагинация-->
+                  <div class="pagination"><a class="pagination__item" href="#">1</a><a class="pagination__item" href="#">2</a>
+                    <div class="pagination__item pagination__item-current">3</div>
+                    <div class="pagination__item">...</div><a class="pagination__item" href="#">6</a>
+                  </div>
+                  <!-- /Пагинация-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- УТП-->
+    <div class="main__utp">
+          <!-- УТП вер.1-->
+          <div class="utp1">
+            <div class="utp1__ttl">Качественные переводы с китайского языка</div>
+            <div class="utp1__txt">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке</div>
+            <div class="utp1__btn">
+                  <!-- Стандартная красная кнопка - вызов модалки-->
+                  <button class="red-btn" type="button" id="main-utp-btn" data-toggle="modal" data-target="#modal1">Оформить заявку</button>
+                  <!-- /Стандартная красная кнопка - вызов модалки-->
+            </div>
+          </div>
+          <!-- /УТП вер.1-->
+    </div>
+    <!-- /УТП-->
+    <div class="main__bg-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="gos-standarts__adv-full-width-wrap">
+                  <!-- Баннер на всю ширину-->
+                  <div class="adv-full-width">Место для баннер рекламы на сайте</div>
+                  <!-- /Баннер на всю ширину-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Контент-->
+    <!-- /Контент-->
+    <!-- Footer -->
+    <!-- Возникли вопросы?-->
+    <div class="footer__form">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <div class="footer__form-ttl">Возникли вопросы? Оставь свои контактные данные и наш менеджер свяжется с вами</div>
+            <form class="footer__form-inputs">
+              <input class="footer__form-inputs-input" type="text" placeholder="Имя"/>
+              <input class="footer__form-inputs-input" type="phone" placeholder="Телефон"/>
+              <input class="footer__form-inputs-input" type="mail" placeholder="Email"/>
+              <input class="footer__form-inputs-input footer__form-inputs-input_submit" type="submit"/>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Возникли вопросы?-->
+    <footer><img class="footer__house-img" src="images/footer__house.png"/>
+      <div class="footer__ornament"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-5"><img class="footer__logo" src="images/logo__header.png"/>
+            <div class="footer__txt">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mt-4 mt-md-0">
+            <div class="footer__contacts">
+              <div class="footer__contacts-ttl">Контакты</div>
+              <div class="footer__contacts-row">
+                <div class="footer__contacts-row-left"><img class="footer__contacts-row-left-img" src="images/footer__telephone.png"/></div>
+                <div class="footer__contacts-row-right">
+                  <div class="footer__contacts-row-right-row">+375 44 265 25 12</div>
+                  <div class="footer__contacts-row-right-row">+375 44 123 45 78</div>
+                </div>
+              </div>
+              <div class="footer__contacts-row">
+                <div class="footer__contacts-row-left"><img class="footer__contacts-row-left-img" src="images/footer__mail.png"/></div>
+                <div class="footer__contacts-row-right">
+                  <div class="footer__contacts-row-right-txt">informblog@gmail.com</div>
+                </div>
+              </div>
+            </div>
+            <div class="footer__socials">
+              <div class="footer__socials-ttl footer__contacts-ttl">Мы в социальных сетях</div>
+              <div class="footer__socials-items"><a class="footer__socials-items-item" href="#"><img class="footer__socials-items-item" src="images/footer__socials-vk.png"/></a><a class="footer__socials-items-item" href="#"><img class="footer__socials-items-item" src="images/footer__socials-skype.png"/></a><a class="footer__socials-items-item" href="#"><img class="footer__socials-items-item" src="images/footer__socials-inst.png"/></a><a class="footer__socials-items-item" href="#"><img class="footer__socials-items-item" src="images/footer__socials-fb.png"/></a></div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 mt-4 mt-lg-0">
+            <div class="footer__nav-items">         <a class="navbar__navs-nav-a footer__nav-item" href="about.html">О нас</a><a class="navbar__navs-nav-a footer__nav-item" href="news.html">Новости</a><a class="navbar__navs-nav-a footer__nav-item" href="links.html">Полезные ссылки</a><a class="navbar__navs-nav-a footer__nav-item" href="doska.html">Доска объявлений</a><a class="navbar__navs-nav-a footer__nav-item" href="buro.html">Бюро переводов</a><a class="navbar__navs-nav-a footer__nav-item" href="trans.html">Для переводчиков</a><a class="navbar__navs-nav-a footer__nav-item" href="zakonod.html">Законодательство Китая</a><a class="navbar__navs-nav-a footer__nav-item" href="gos-ustroistvo.html">Государственное устройство</a><a class="navbar__navs-nav-a footer__nav-item" href="holidays-main.html">Праздники и традиции</a><a class="navbar__navs-nav-a footer__nav-item" href="kitaevedi.html">Китаеведы, НИИ</a><a class="navbar__navs-nav-a footer__nav-item" href="gos-standarts.html">Госстандарты КНР</a></div>
+          </div>
+        </div>
+        <!-- Копирайт-->
+        <div class="row">
+          <div class="footer__separ"></div>
+        </div>
+        <div class="row">
+          <div class="footer__copyright">copyright ©2018 Все права защищены      </div>
+        </div>
+            <!-- Модальное окно - оформить заявку на перевод-->
+            <div class="modal fade" id="modal1">
+              <div class="modal-dialog">
+                <div class="modal-content pb-4 pt-4">
+                  <div class="modal-content__title pl-3 pr-3 text-center">Оформить заявку на перевод</div>
+                  <form class="modal-content__form" id="orderTranslation" action="assets/send.php" method="POST">
+                    <div class="modal-content__form-cols p-3 flex-column flex-sm-row">
+                      <div class="modal-content__form-cols-col p-2">
+                        <input class="modal-content__form-cols-col-input" type="text" name="fio" placeholder="ФИО"/>
+                        <input class="modal-content__form-cols-col-input" type="tel" name="phone" placeholder="+7(123) 345 67 89"/>
+                        <input class="modal-content__form-cols-col-input" type="mail" name="mail" placeholder="Email"/>
+                      </div>
+                      <div class="modal-content__form-cols-col p-2">
+                        <textarea class="modal-content__form-cols-col-textarea" name="dopinfo" placeholder="Дополнительная информация"></textarea>
+                        <div class="modal-content__form-cols-col-file" onclick="document.getElementById('orderTranslationFile').click()">Прикрепить файлы для перевода</div>
+                        <input id="orderTranslationFile" type="file" name="file" style="display:none;"/>
+                      </div>
+                    </div>
+                    <div class="modal-content__form-submit pl-3 pr-3">
+                          <!-- Стандартная красная кнопка - вызов модалки-->
+                          <button class="red-btn" type="submit">Отправить</button>
+                          <!-- /Стандартная красная кнопка - вызов модалки-->
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <!-- Модальное окно - заказать бесплатную оценку стоимости-->
+            <div class="modal fade" id="modal2">
+              <div class="modal-dialog">
+                <div class="modal-content pb-4 pt-4">
+                  <div class="modal-content__title pl-3 pr-3 text-center">Заказать бесплатную оценку стоимости</div>
+                  <form class="modal-content__form" id="orderOcenka" action="assets/send.php" method="POST">
+                    <div class="modal-content__form-cols p-3 flex-column flex-sm-row">
+                      <div class="modal-content__form-cols-col p-2">
+                        <input class="modal-content__form-cols-col-input" type="text" name="fio" placeholder="ФИО"/>
+                        <input class="modal-content__form-cols-col-input" type="tel" name="phone" placeholder="+7(123) 345 67 89"/>
+                        <input class="modal-content__form-cols-col-input" type="mail" name="mail" placeholder="Email"/>
+                      </div>
+                      <div class="modal-content__form-cols-col p-2">
+                        <textarea class="modal-content__form-cols-col-textarea" name="dopinfo" placeholder="Дополнительная информация"></textarea>
+                        <div class="modal-content__form-cols-col-file" onclick="document.getElementById('orderOcenkaFile').click()">Прикрепить файлы для перевода</div>
+                        <input id="orderOcenkaFile" type="file" name="file" style="display:none;"/>
+                      </div>
+                    </div>
+                    <div class="modal-content__form-submit pl-3 pr-3">
+                          <!-- Стандартная красная кнопка - вызов модалки-->
+                          <button class="red-btn" type="submit">Отправить</button>
+                          <!-- /Стандартная красная кнопка - вызов модалки-->
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <!-- Модальное окно - Подать объявление-->
+            <div class="modal fade" id="modal3">
+              <div class="modal-dialog">
+                <div class="modal-content pb-4 pt-4">
+                  <div class="modal-content__title pl-3 pr-3 text-center">Оставить объявление на сайте</div>
+                  <form class="modal-content__form" id="orderDoska" action="assets/send.php" method="POST">
+                    <div class="modal-content__form-cols p-3 flex-column flex-sm-row">
+                      <div class="modal-content__form-cols-col p-2">
+                        <input class="modal-content__form-cols-col-input" type="text" name="fio" placeholder="ФИО"/>
+                        <input class="modal-content__form-cols-col-input" type="tel" name="phone" placeholder="+7(123) 345 67 89"/>
+                        <input class="modal-content__form-cols-col-input" type="mail" name="mail" placeholder="Email"/>
+                      </div>
+                      <div class="modal-content__form-cols-col p-2">
+                        <textarea class="modal-content__form-cols-col-textarea" name="dopinfo" placeholder="Текст объявления"></textarea>
+                        <div class="modal-content__form-cols-col-file" onclick="document.getElementById('orderDoskaFile').click()">Загрузить фото</div>
+                        <input id="orderDoskaFile" type="file" name="file" style="display:none;"/>
+                      </div>
+                    </div>
+                    <div class="modal-content__form-submit pl-3 pr-3">
+                          <!-- Стандартная красная кнопка - вызов модалки-->
+                          <button class="red-btn" type="submit">Отправить</button>
+                          <!-- /Стандартная красная кнопка - вызов модалки-->
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+      </div>
+    </footer>
+    <!-- Прокрутка к началу страницы--><a class="scroll-to-top mobile-hide" href="#" style="display: none"></a>
+    <!-- /Прокрутка к началу страницы-->
+    <!-- Скрипты -->
+    <!-- Bootstrap-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="assets/slick.js"></script>
+    <script type="text/javascript" src="assets/scripts.js"></script>
+    <!-- Свои скрипты-->
+  </body>
+</html>
